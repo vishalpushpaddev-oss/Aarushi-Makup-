@@ -4,7 +4,13 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" id="vp" />
+    <script>
+      // Mobile par site 75% zoom par khule (zyada content ek saath dikhe); desktop normal.
+      if (window.matchMedia && window.matchMedia('(max-width: 820px)').matches) {
+        document.getElementById('vp').setAttribute('content', 'width=device-width, initial-scale=0.75');
+      }
+    </script>
     <meta name="description" content="Aarushi Makeup Studio & Academy, Mhow — bridal makeup, party makeup, facials, hair, nails, home service and professional makeup courses." />
     <meta name="theme-color" content="#2a1020" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
