@@ -63,7 +63,12 @@ export default function Footer() {
       </div>
 
       <div className="container footer__bottom">
-        <span>© {YEAR} {brand.name} {brand.suffix}. All rights reserved.</span>
+        <div className="footer__meta">
+          <span>© {YEAR} {brand.name} {brand.suffix}. All rights reserved.</span>
+          <span className="footer__credit">
+            Designed &amp; developed with <span className="footer__heart" aria-label="love">♥</span> by <strong>Vishal</strong>
+          </span>
+        </div>
         <span className="footer__giant" aria-hidden="true">{brand.name}</span>
       </div>
     </footer>

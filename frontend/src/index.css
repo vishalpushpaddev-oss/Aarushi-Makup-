@@ -1098,3 +1098,11 @@ html.lenis, html.lenis body { height: auto; }
 .header__link { padding: 9px 13px; font-size: 0.9rem; }
 @media (max-width: 1360px) { .header__phone { display: none; } }
 @media (max-width: 1180px) { .header__link { padding: 8px 10px; font-size: 0.86rem; } }
+
+/* ---------- Footer credit ---------- */
+.footer__meta { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 8px 24px; }
+.footer__credit { display: inline-flex; align-items: center; gap: 6px; color: rgba(252, 246, 244, 0.7); }
+.footer__credit strong { font-family: var(--serif); font-style: italic; font-weight: 600; font-size: 1.05rem; color: var(--gold-2); letter-spacing: 0.01em; }
+.footer__heart { color: #ff6b8b; display: inline-block; animation: heartbeat 1.6s ease-in-out infinite; }
+@keyframes heartbeat { 0%, 100% { transform: scale(1); } 15% { transform: scale(1.25); } 30% { transform: scale(1); } 45% { transform: scale(1.18); } }
+@media (max-width: 680px) { .footer__meta { flex-direction: column; align-items: flex-start; } }
