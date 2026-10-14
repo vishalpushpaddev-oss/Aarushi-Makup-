@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { IMG, brand, brands, stats, whyUs, packages, services, portfolio, courses, posts } from '../data/site'
 import { Reveal, Eyebrow, SectionHead, Button, Marquee, Icon } from '../components/ui'
@@ -19,17 +19,38 @@ const slides = [
 function Hero() {
   const [i, setI] = useState(0)
   const next = (i + 1) % slides.length
+  const videoRef = useRef(null)
+  const [needsTap, setNeedsTap] = useState(false)
 
   useEffect(() => {
     const t = setTimeout(() => setI((v) => (v + 1) % slides.length), 6000)
     return () => clearTimeout(t)
   }, [i])
 
+  // Autoplay (muted) try karo; phone block kare to tap-to-play dikhao
+  useEffect(() => {
+    const v = videoRef.current
+    if (!v) return
+    const tryPlay = () => v.play().then(() => setNeedsTap(false)).catch(() => setNeedsTap(true))
+    tryPlay()
+    const onVisible = () => document.visibilityState === 'visible' && tryPlay()
+    document.addEventListener('visibilitychange', onVisible)
+    return () => document.removeEventListener('visibilitychange', onVisible)
+  }, [])
+
+  const playNow = () => {
+    const v = videoRef.current
+    if (!v) return
+    v.muted = true
+    v.play().then(() => setNeedsTap(false)).catch(() => {})
+  }
+
   return (
     <section className="hero">
       <div className="hero__bg">
         <Particles />
         <video
+          ref={videoRef}
           className="hero__video"
           src="/videos/bride-2.mp4"
           poster="/images/reel-1.webp"
@@ -39,6 +60,11 @@ function Hero() {
           playsInline
           preload="auto"
         />
+        {needsTap && (
+          <button className="hero__play" onClick={playNow} aria-label="Play video">
+            <Icon name="play" size={26} />
+          </button>
+        )}
       </div>
       <div className="container hero__inner">
         <div className="hero__copy">
