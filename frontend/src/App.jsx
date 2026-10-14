@@ -12,6 +12,7 @@ import Services from './pages/Services'
 import Academy from './pages/Academy'
 import Journal from './pages/Journal'
 import Contact from './pages/Contact'
+import Reviews from './pages/Reviews'
 import NotFound from './pages/NotFound'
 import Landing from './pages/Landing'
 import { landingPages } from './data/landing'
@@ -28,6 +29,7 @@ export default function App() {
           <Route path="/about" element={<About />} />
           <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/services" element={<Services />} />
+          <Route path="/reviews" element={<Reviews />} />
           <Route path="/academy" element={<Academy />} />
           <Route path="/journal" element={<Journal />} />
           <Route path="/contact" element={<Contact />} />

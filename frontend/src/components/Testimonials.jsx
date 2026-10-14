@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import { Link } from 'react-router-dom'
 import { testimonials, IMG } from '../data/site'
 import { Icon, Eyebrow } from './ui'
 import Ratings from './Ratings'
@@ -48,6 +49,7 @@ export default function Testimonials({ id }) {
             <button onClick={() => go(1)} aria-label="Next"><Icon name="right" /></button>
           </div>
           <Ratings light />
+          <Link to="/reviews" className="link-arrow testi__all">Read all reviews <Icon name="arrow" /></Link>
         </div>
       </div>
     </section>

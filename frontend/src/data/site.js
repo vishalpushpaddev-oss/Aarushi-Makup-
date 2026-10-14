@@ -68,6 +68,7 @@ export const nav = [
   { to: '/about', label: 'About' },
   { to: '/portfolio', label: 'Portfolio' },
   { to: '/services', label: 'Services & Prices' },
+  { to: '/reviews', label: 'Reviews' },
   { to: '/academy', label: 'Academy' },
   { to: '/journal', label: 'Journal' },
   { to: '/contact', label: 'Contact' },

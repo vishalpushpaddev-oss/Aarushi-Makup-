@@ -376,9 +376,9 @@ function Insta() {
 const homeSections = [
   { id: 'services', label: 'Services' },
   { id: 'packages', label: 'Packages' },
+  { id: 'reviews', label: 'Reviews' },
   { id: 'why-us', label: 'Why us' },
   { id: 'portfolio', label: 'Portfolio' },
-  { id: 'reviews', label: 'Reviews' },
   { id: 'academy', label: 'Academy' },
   { id: 'journal', label: 'Tips' },
   { id: 'areas', label: 'Areas' },
@@ -393,9 +393,9 @@ export default function Home() {
       <Intro />
       <ServicesStrip />
       <Packages />
+      <Testimonials id="reviews" />
       <Why />
       <Work />
-      <Testimonials id="reviews" />
       <AcademyTeaser />
       <Journal />
       <Areas />

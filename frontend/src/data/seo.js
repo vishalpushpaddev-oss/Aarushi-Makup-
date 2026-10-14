@@ -30,6 +30,11 @@ export const pages = {
     description:
       'Bridal makeup packages from ₹25,000, engagement, party & family makeup, facials, hair styling, nail art and home service in Mhow & Indore. See full rate card and FAQs.',
   },
+  '/reviews': {
+    title: `Reviews — Rated 5.0★ by Clients in Mhow | ${NAME}`,
+    description:
+      'Read real client reviews of Aarushi Makeup Studio & Academy, Mhow — rated 5.0 on Justdial and Google for bridal makeup, party makeup and beauty services.',
+  },
   '/academy': {
     title: `Makeup Course in Mhow & Indore — Makeup Academy | ${NAME}`,
     description:
