@@ -29,16 +29,16 @@ function Hero() {
     <section className="hero">
       <div className="hero__bg">
         <Particles />
-        {slides.map((s, k) => (
-          <img
-            key={s.src}
-            src={s.src}
-            alt={k === i ? s.label : ''}
-            className={k === i ? 'is-on' : ''}
-            style={{ objectPosition: s.pos }}
-            fetchPriority={k === 0 ? 'high' : 'low'}
-          />
-        ))}
+        <video
+          className="hero__video"
+          src="/videos/bride-2.mp4"
+          poster="/images/reel-1.webp"
+          autoPlay
+          muted
+          loop
+          playsInline
+          preload="auto"
+        />
       </div>
       <div className="container hero__inner">
         <div className="hero__copy">
