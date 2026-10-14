@@ -61,7 +61,7 @@ export default function Academy() {
       <section className="section">
         <div className="container enrol">
           <Reveal className="enrol__media">
-            <img src={IMG.products} alt="" loading="lazy" />
+            <img src={IMG.studioEntry} alt="Aarushi Makeup Academy studio, Mhow" loading="lazy" />
           </Reveal>
           <div>
             <SectionHead eyebrow="Enquire" title="Reserve your <em>seat</em>" text="Tell us which course you're interested in and we'll share batch dates, fees and the full syllabus." />

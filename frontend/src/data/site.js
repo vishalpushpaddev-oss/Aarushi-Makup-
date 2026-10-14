@@ -26,6 +26,17 @@ export const IMG = {
   lipstick: img('lipstick'),
   studio: img('studio'),
   studio2: img('studio-2'),
+  // Asli photos — Google Business listing se
+  realBride1: img('real-bride-1'),
+  realBride2: img('real-bride-2'),
+  realEngagement: img('real-engagement'),
+  realHair: img('real-hair'),
+  realSmoothing: img('real-hair-smoothing'),
+  studioFront: img('studio-front'),
+  studioInside: img('studio-inside'),
+  studioDecor: img('studio-decor'),
+  studioEntry: img('studio-entry'),
+  studioHair: img('studio-hair-station'),
 }
 
 export const brand = {
@@ -38,7 +49,7 @@ export const brand = {
   email: '', // asli email milne par yahan daalein — khaali rahe to website par email nahi dikhega
   address: '2nd Floor, HDFC Bank Building, Shanti Nagar Road, Opp. Petrol Pump, Shanti Nagar, Mhow, Indore, Madhya Pradesh 453441',
   hours: 'Mon – Sun · 8:00 AM – 9:00 PM (by appointment)',
-  instagram: 'https://instagram.com/',
+  instagram: 'https://www.instagram.com/aarushi_makeup_studio/',
   facebook: 'https://facebook.com/',
   youtube: 'https://youtube.com/',
 }
@@ -108,9 +119,9 @@ export const packages = [
 export const services = [
   { slug: 'bridal', page: '/bridal-makeup-artist-mhow', title: 'Bridal Makeup', img: IMG.bride1, price: 'from ₹25,000', text: 'HD and airbrush bridal looks for the wedding day, designed around your outfit, jewellery and skin.' },
   { slug: 'engagement', page: '/party-makeup-mhow', title: 'Engagement & Reception', img: IMG.bride10, price: 'from ₹15,000', text: 'Glam, soft-glam or dewy — a look that shines under evening lights and on the dance floor.' },
-  { slug: 'party', page: '/party-makeup-mhow', title: 'Party & Family Makeup', img: IMG.bride6, price: 'from ₹5,000', text: 'For mothers, sisters, bridesmaids and guests. Group bookings get a dedicated artist team.' },
+  { slug: 'party', page: '/party-makeup-mhow', title: 'Party & Family Makeup', img: IMG.realEngagement, price: 'from ₹5,000', text: 'For mothers, sisters, bridesmaids and guests. Group bookings get a dedicated artist team.' },
   { slug: 'skin', page: '/beauty-parlour-mhow', title: 'Facials & Skin Care', img: IMG.face, price: 'from ₹1,500', text: 'Pre-bridal facials, clean-ups and glow treatments so your skin is camera-ready before the big day.' },
-  { slug: 'hair', page: '/beauty-parlour-mhow', title: 'Hair Care & Styling', img: IMG.sareePink, price: 'from ₹1,000', text: 'Hair spa, treatments, bridal buns, braids, waves and saree / lehenga draping.' },
+  { slug: 'hair', page: '/beauty-parlour-mhow', title: 'Hair Care & Styling', img: IMG.realHair, price: 'from ₹1,000', text: 'Hair spa, treatments, bridal buns, braids, waves and saree / lehenga draping.' },
   { slug: 'nails', page: '/beauty-parlour-mhow', title: 'Nail Art & Extensions', img: IMG.lipstick, price: 'from ₹800', text: 'Gel polish, nail extensions and bridal nail art to match your outfit.' },
 ]
 
@@ -128,7 +139,7 @@ export const courses = [
     mode: 'In studio',
     fee: '₹1,25,000',
     level: 'Beginner to Pro',
-    img: IMG.studio2,
+    img: IMG.studioInside,
     points: ['Skin science & prep', 'Colour theory & correction', 'HD, airbrush & bridal looks', 'Portfolio shoot + certificate', 'Business & pricing session'],
   },
   {
@@ -148,7 +159,7 @@ export const courses = [
     mode: 'In studio',
     fee: '₹35,000',
     level: 'Intermediate',
-    img: IMG.brushes,
+    img: IMG.studioHair,
     points: ['Bridal buns & braids', 'Curls, waves & volume', 'Accessory placement', 'Saree & dupatta draping'],
   },
   {
@@ -164,6 +175,12 @@ export const courses = [
 ]
 
 export const portfolio = [
+  { src: IMG.realBride2, cat: 'Bridal', title: 'Kundan bridal glam', real: true },
+  { src: IMG.studioInside, cat: 'Our studio', title: 'Our studio in Shanti Nagar, Mhow', real: true },
+  { src: IMG.realBride1, cat: 'Bridal', title: 'Red lehenga bride', real: true },
+  { src: IMG.realEngagement, cat: 'Party', title: 'Engagement soft glam', real: true },
+  { src: IMG.realSmoothing, cat: 'Hair', title: 'Hair straightening & smoothing', real: true },
+  { src: IMG.realHair, cat: 'Hair', title: 'Silky, smooth finish', real: true },
   { src: IMG.hero, cat: 'Bridal', title: 'Statement kundan bride' },
   { src: IMG.bride1, cat: 'Bridal', title: 'Rani pink, soft eyes' },
   { src: IMG.bride4, cat: 'Haldi & Mehendi', title: 'South Indian silk' },
@@ -180,6 +197,10 @@ export const portfolio = [
   { src: IMG.bride8, cat: 'Editorial', title: 'Low-key portrait' },
   { src: IMG.palette, cat: 'Behind the scenes', title: 'Kit for the day' },
   { src: IMG.brushPot, cat: 'Behind the scenes', title: 'Brushes ready' },
+  { src: IMG.studioDecor, cat: 'Our studio', title: 'Floral photo corner', real: true },
+  { src: IMG.studioEntry, cat: 'Our studio', title: 'Studio entrance', real: true },
+  { src: IMG.studioHair, cat: 'Our studio', title: 'Hair wash station', real: true },
+  { src: IMG.studioFront, cat: 'Our studio', title: 'Find us above HDFC Bank', real: true },
 ]
 
 export const testimonials = [

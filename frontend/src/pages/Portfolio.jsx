@@ -28,7 +28,7 @@ export default function Portfolio() {
 
   return (
     <>
-      <PageHero eyebrow="Bridal makeup portfolio · Mhow" title="A gallery of <em>real</em> brides" text="Every photo here is a real client — no filters, no face-tuning. Just skin, light and a lot of love." img={IMG.bride3} />
+      <PageHero eyebrow="Bridal makeup portfolio · Mhow" title="A gallery of <em>real</em> brides" text="Looks from our studio in Mhow. Photos marked “Real client” are our own work — more coming soon." img={IMG.bride3} />
 
       <section className="section">
         <div className="container">
@@ -47,7 +47,7 @@ export default function Portfolio() {
                 <button onClick={() => setOpen(i)} aria-label={`Open ${p.title}`} data-cursor="View">
                   <img src={p.src} alt={p.title} loading="lazy" />
                   <span className="masonry__cap">
-                    <small>{p.cat}</small>
+                    <small>{p.cat}{p.real ? (p.cat === 'Our studio' ? ' · Real' : ' · Real client') : ''}</small>
                     {p.title}
                     <Icon name="plus" />
                   </span>

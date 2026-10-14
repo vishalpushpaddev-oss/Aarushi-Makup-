@@ -12,8 +12,8 @@ export const landingPages = [
     h1: 'Bridal Makeup Artist in Mhow, Indore',
     hero: 'Your wedding look, <em>made for you</em>',
     heroText: 'HD and airbrush bridal makeup, hairstyling and draping — at our Mhow studio or at your home and venue.',
-    img: IMG.hero,
-    gallery: [IMG.bride1, IMG.bride5, IMG.bride11, IMG.bride3],
+    img: IMG.realBride1,
+    gallery: [IMG.realBride2, IMG.realBride1, IMG.realEngagement, IMG.bride11],
     price: 'from ₹25,000',
     intro: [
       'Looking for a bridal makeup artist in Mhow who understands Indian bridal looks? At Aarushi Makeup Studio & Academy we create dulhan makeup that looks natural in person and flawless in photos and 4K video — whether you love a soft, dewy look or a full traditional glam.',
@@ -78,7 +78,7 @@ export const landingPages = [
     hero: 'Every function, <em>its own glow</em>',
     heroText: 'Soft glam, dewy or full glam looks for engagements, receptions, sangeet, haldi, mehendi and family functions.',
     img: IMG.bride10,
-    gallery: [IMG.bride2, IMG.bride6, IMG.bride4, IMG.face],
+    gallery: [IMG.realEngagement, IMG.realBride2, IMG.bride2, IMG.bride6],
     price: 'from ₹5,000',
     intro: [
       'Need party makeup in Mhow for an engagement, reception, sangeet or a family wedding? Our team creates looks that shine under evening lights and photograph beautifully — from soft, natural glam to bold eyes and statement lips.',
@@ -109,8 +109,8 @@ export const landingPages = [
     h1: 'Makeup Course in Mhow — Makeup Academy near Indore',
     hero: 'Become a <em>makeup artist</em>',
     heroText: 'Hands-on makeup and hairstyling courses taught by a working bridal makeup artist in Mhow.',
-    img: IMG.studio2,
-    gallery: [IMG.brushes, IMG.palette, IMG.products, IMG.bride5],
+    img: IMG.studioInside,
+    gallery: [IMG.studioInside, IMG.studioEntry, IMG.studioDecor, IMG.studioHair],
     price: 'from ₹9,999',
     intro: [
       'Want to become a professional makeup artist? Aarushi Makeup Studio & Academy in Mhow offers practical makeup courses for beginners, working artists and anyone who wants to learn self-makeup.',
@@ -142,8 +142,8 @@ export const landingPages = [
     h1: 'Beauty Parlour in Mhow — Facials, Hair & Nails',
     hero: 'Beauty care, <em>under one roof</em>',
     heroText: 'Facials, pre-bridal skin care, hair care, nail art and makeup at our studio in Shanti Nagar, Mhow.',
-    img: IMG.bride6,
-    gallery: [IMG.face, IMG.sareePink, IMG.lipstick, IMG.bride4],
+    img: IMG.studioInside,
+    gallery: [IMG.realSmoothing, IMG.realHair, IMG.studioHair, IMG.studioFront],
     price: 'from ₹800',
     intro: [
       'Aarushi Makeup Studio & Academy is a beauty parlour and makeup studio in Shanti Nagar, Mhow — above HDFC Bank, opposite the petrol pump. Along with bridal and party makeup, we offer the beauty services you need before any big occasion.',

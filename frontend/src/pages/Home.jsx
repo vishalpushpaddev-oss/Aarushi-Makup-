@@ -8,10 +8,11 @@ import { CountUp, Parallax } from '../components/motion'
 import { areasServed } from '../data/seo'
 
 const slides = [
+  { src: IMG.realBride2, pos: '50% 22%', label: 'Kundan bridal glam' },
+  { src: IMG.realBride1, pos: '50% 30%', label: 'Red lehenga bride' },
   { src: IMG.hero, pos: '62% 20%', label: 'Kundan bridal' },
   { src: IMG.bride5, pos: '50% 30%', label: 'HD close-up' },
   { src: IMG.bride1, pos: '50% 25%', label: 'Rani pink bride' },
-  { src: IMG.bride6, pos: '50% 20%', label: 'Polki & glow' },
 ]
 
 function Hero() {
@@ -104,7 +105,7 @@ function Intro() {
         <Reveal className="intro__media">
           <div className="intro__img-a reveal-img">
             <Parallax speed={0.06}>
-              <img src={IMG.bride11} alt="Bride with mehendi and mathapatti" />
+              <img src={IMG.realEngagement} alt="Engagement makeup by Aarushi Makeup Studio, Mhow" />
             </Parallax>
           </div>
           <img className="intro__img-b" src={IMG.palette} alt="" />

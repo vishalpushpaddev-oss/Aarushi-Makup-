@@ -48,6 +48,10 @@ export default function Contact() {
               <Icon name="pin" />
               <span>{brand.address}</span>
             </Reveal>
+            <Reveal className="contact__front">
+              <img src={IMG.studioFront} alt="Aarushi Makeup Studio & Academy board above HDFC Bank, Shanti Nagar, Mhow" loading="lazy" />
+              <span>Look for our board above HDFC Bank, opposite the petrol pump.</span>
+            </Reveal>
             <Reveal className="contact__ratings">
               <Ratings />
             </Reveal>

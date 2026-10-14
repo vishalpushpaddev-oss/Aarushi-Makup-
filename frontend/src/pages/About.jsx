@@ -25,8 +25,8 @@ export default function About() {
       <section className="section">
         <div className="container about-split">
           <Reveal className="about-split__media">
-            <img src={IMG.bride11} alt="Aarushi at work" />
-            <img src={IMG.brushes} alt="" className="about-split__inset" />
+            <img src={IMG.studioDecor} alt="Inside Aarushi Makeup Studio & Academy, Mhow" />
+            <img src={IMG.studioFront} alt="Studio board above HDFC Bank, Shanti Nagar, Mhow" className="about-split__inset" />
           </Reveal>
           <div>
             <Reveal>
