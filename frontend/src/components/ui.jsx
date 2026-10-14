@@ -65,11 +65,15 @@ export function Button({ to, href, variant = 'solid', children, icon = true, enq
   return <button className={cls} {...rest}>{inner}</button>
 }
 
-export function PageHero({ eyebrow, title, text, img }) {
+export function PageHero({ eyebrow, title, text, img, video }) {
   return (
     <section className="page-hero">
       <div className="page-hero__media">
-        <img src={img} alt="" />
+        {video ? (
+          <video src={video} poster={img} autoPlay muted loop playsInline preload="auto" aria-hidden="true" />
+        ) : (
+          <img src={img} alt="" />
+        )}
       </div>
       <div className="container page-hero__inner">
         <Reveal>

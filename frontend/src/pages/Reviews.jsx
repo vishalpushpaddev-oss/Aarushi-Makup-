@@ -1,4 +1,4 @@
-import { IMG, brand, testimonials, ratings } from '../data/site'
+import { brand, testimonials, ratings } from '../data/site'
 import { PageHero, Reveal, SectionHead, Button } from '../components/ui'
 import Ratings from '../components/Ratings'
 
@@ -11,7 +11,8 @@ export default function Reviews() {
         eyebrow="Reviews of Aarushi Makeup Studio, Mhow"
         title="Loved by our <em>clients</em>"
         text={`Rated 5.0★ from ${total} ratings on Justdial and Google. Here's what our clients wrote — in their own words.`}
-        img={IMG.realBride1}
+        img="/images/reviews-bg.webp"
+        video="/videos/reviews-bg.mp4"
       />
 
       <section className="section">
