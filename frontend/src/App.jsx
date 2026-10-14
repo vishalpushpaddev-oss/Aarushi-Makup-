@@ -5,6 +5,7 @@ import WhatsAppFab from './components/WhatsAppFab'
 import MobileCta from './components/MobileCta'
 import { BackToTop } from './components/ScrollNav'
 import { SmoothScroll, Cursor } from './components/motion'
+import { PremiumFX } from './components/premium'
 import Home from './pages/Home'
 import About from './pages/About'
 import Portfolio from './pages/Portfolio'
@@ -22,6 +23,7 @@ export default function App() {
     <>
       <SmoothScroll />
       <Cursor />
+      <PremiumFX />
       <Header />
       <main>
         <Routes>

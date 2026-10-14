@@ -5,6 +5,7 @@ import { Reveal, Eyebrow, SectionHead, Button, Marquee, Icon } from '../componen
 import Testimonials from '../components/Testimonials'
 import { SectionNav } from '../components/ScrollNav'
 import { CountUp, Parallax } from '../components/motion'
+import { Divider, Particles } from '../components/premium'
 import { areasServed } from '../data/seo'
 
 const slides = [
@@ -27,6 +28,7 @@ function Hero() {
   return (
     <section className="hero">
       <div className="hero__bg">
+        <Particles />
         {slides.map((s, k) => (
           <img
             key={s.src}
@@ -391,12 +393,15 @@ export default function Home() {
       <Hero />
       <Marquee items={brands} />
       <Intro />
+      <Divider />
       <ServicesStrip />
       <Packages />
       <Testimonials id="reviews" />
+      <Divider motif="❖" />
       <Why />
       <Work />
       <AcademyTeaser />
+      <Divider />
       <Journal />
       <Areas />
       <Insta />
