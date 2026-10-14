@@ -128,7 +128,7 @@ export const services = [
 export const priceList = [
   { group: 'Bridal', items: [['HD Bridal Makeup', '₹25,000'], ['Airbrush Bridal Makeup', '₹35,000'], ['Pre-bridal Trial', '₹5,000'], ['Destination Wedding', 'On request']] },
   { group: 'Occasion', items: [['Engagement / Reception', '₹15,000'], ['Haldi / Mehendi', '₹8,000'], ['Sangeet / Cocktail', '₹12,000'], ['Party Makeup (guest)', '₹5,000']] },
-  { group: 'Add-ons', items: [['Hairstyling only', '₹2,500'], ['Saree / Dupatta Draping', '₹1,000'], ['Pre-bridal Facial', '₹1,500'], ['Nail Extensions', '₹800'], ['Home Service', 'On request']] },
+  { group: 'Add-ons', items: [['Hairstyling only', '₹2,500'], ['Saree / Dupatta Draping', '₹1,000'], ['Pre-bridal Facial', '₹1,500'], ['Nail Extensions', '₹800'], ['Waxing', 'On request'], ['Body Massage', 'On request'], ['Home Service', 'On request']] },
 ]
 
 export const courses = [

@@ -136,9 +136,9 @@ export const landingPages = [
   {
     slug: '/beauty-parlour-mhow',
     nav: 'Beauty Parlour in Mhow',
-    title: 'Beauty Parlour in Mhow | Facials, Hair Spa, Nails & Makeup',
+    title: 'Beauty Parlour in Mhow | Facials, Waxing, Hair Spa, Nails & Massage',
     description:
-      'Beauty parlour in Shanti Nagar, Mhow for facials, pre-bridal skin care, hair spa & styling, nail art & extensions and makeup. Studio and home service in Mhow & Indore.',
+      'Beauty parlour in Shanti Nagar, Mhow for facials & skin treatments, waxing, body massage, hair spa & treatments, nail art & extensions and makeup. Studio and home service in Mhow & Indore.',
     h1: 'Beauty Parlour in Mhow — Facials, Hair & Nails',
     hero: 'Beauty care, <em>under one roof</em>',
     heroText: 'Facials, pre-bridal skin care, hair care, nail art and makeup at our studio in Shanti Nagar, Mhow.',
@@ -147,15 +147,15 @@ export const landingPages = [
     price: 'from ₹800',
     intro: [
       'Aarushi Makeup Studio & Academy is a beauty parlour and makeup studio in Shanti Nagar, Mhow — above HDFC Bank, opposite the petrol pump. Along with bridal and party makeup, we offer the beauty services you need before any big occasion.',
-      'Book pre-bridal facials and clean-ups so your skin is glowing and camera-ready, hair spa and hair treatments, everyday and occasion hairstyling, and nail art, gel polish and nail extensions designed to match your outfit.',
+      'Book pre-bridal facials, clean-ups and skin treatments so your skin is glowing and camera-ready, waxing and relaxing body massage, hair spa and hair treatments, everyday and occasion hairstyling, and nail art, gel polish and nail extensions designed to match your outfit.',
       'Short on time? Many services are also available as home service across Mhow and Indore.',
     ],
     includes: [
-      'Facials, clean-ups & pre-bridal skin care',
+      'Facials, clean-ups & skin treatments',
+      'Waxing & body massage',
       'Hair spa, treatments & hairstyling',
       'Nail art, gel polish & extensions',
       'Party & bridal makeup',
-      'Saree & dupatta draping',
       'Home service available',
     ],
     faqs: [

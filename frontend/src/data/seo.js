@@ -83,7 +83,7 @@ const business = () => ({
     opens: '08:00',
     closes: '21:00',
   },
-  makesOffer: ['Bridal Makeup', 'Engagement & Reception Makeup', 'Party Makeup', 'Facials', 'Hair Styling', 'Nail Art', 'Home Service Makeup'].map(
+  makesOffer: ['Bridal Makeup', 'Engagement & Reception Makeup', 'Party Makeup', 'HD Makeup', 'Facials & Skin Treatments', 'Waxing', 'Body Massage', 'Hair Spa & Hair Treatments', 'Hair Styling', 'Nail Art & Extensions', 'Home Service Makeup', 'Makeup Courses'].map(
     (name) => ({ '@type': 'Offer', itemOffered: { '@type': 'Service', name } }),
   ),
 })
