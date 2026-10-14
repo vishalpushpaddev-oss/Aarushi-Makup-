@@ -1129,3 +1129,17 @@ html.lenis, html.lenis body { height: auto; }
 }
 .rv-score { position: relative; overflow: hidden; animation: ratingGlow 3.2s ease-in-out infinite; }
 .rv-score::after { content: ''; position: absolute; inset: 0; background: linear-gradient(110deg, transparent 35%, rgba(255, 255, 255, 0.22) 50%, transparent 65%); transform: translateX(-120%); animation: ratingShine 4s ease-in-out infinite; pointer-events: none; }
+
+/* ---------- Mobile: ratings full-width, map bar upar ---------- */
+@media (max-width: 680px) {
+  .ratings { flex-direction: column; gap: 10px; }
+  .rating { flex: none; width: 100%; padding: 10px 16px 10px 10px; gap: 12px; }
+  .rating__logo { width: 42px; height: 42px; }
+  .rating__body { flex: 1; }
+  .rating__score strong { font-size: 1.35rem; }
+  .rating__stars { font-size: 1rem; }
+  .rating small { font-size: 0.8rem; white-space: nowrap; }
+  .rating > svg { display: block; }
+  .testi .ratings { margin-top: 26px; }
+  .map__bar { position: static; translate: none; width: fit-content; margin: 12px auto 18px; box-shadow: none; border: 1px solid var(--line); }
+}
