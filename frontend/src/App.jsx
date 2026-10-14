@@ -1,0 +1,39 @@
+import { Routes, Route } from 'react-router-dom'
+import Header from './components/Header'
+import Footer from './components/Footer'
+import WhatsAppFab from './components/WhatsAppFab'
+import MobileCta from './components/MobileCta'
+import { SmoothScroll, Cursor } from './components/motion'
+import Home from './pages/Home'
+import About from './pages/About'
+import Portfolio from './pages/Portfolio'
+import Services from './pages/Services'
+import Academy from './pages/Academy'
+import Journal from './pages/Journal'
+import Contact from './pages/Contact'
+import NotFound from './pages/NotFound'
+
+export default function App() {
+  return (
+    <>
+      <SmoothScroll />
+      <Cursor />
+      <Header />
+      <main>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/portfolio" element={<Portfolio />} />
+          <Route path="/services" element={<Services />} />
+          <Route path="/academy" element={<Academy />} />
+          <Route path="/journal" element={<Journal />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+      </main>
+      <Footer />
+      <WhatsAppFab />
+      <MobileCta />
+    </>
+  )
+}
