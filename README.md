@@ -28,6 +28,6 @@ npm run build      # dist/ me production build + sitemap.xml + robots.txt
 
 ## Deploy (Vercel)
 
-Repo import karein — `vercel.json` already set hai (build: `frontend`, output: `frontend/dist`).
+Repo import karein aur **Root Directory = `frontend`** rakhein (`frontend/vercel.json` me baaki settings hain).
 Project ka naam `aarushimakeupstudio` rakhein taaki URL `aarushimakeupstudio.vercel.app` bane.
 Domain badle to `frontend/src/data/seo.js` me `SITE_URL` update karein.
