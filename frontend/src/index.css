@@ -1297,3 +1297,16 @@ body { background: linear-gradient(180deg, #fcf4f2 0%, #f9ece9 40%, #fbf1ee 100%
 @media (max-width: 900px) { .hero__video { object-position: center center; } }
 .hero__play { position: absolute; left: 50%; top: 42%; translate: -50% -50%; z-index: 3; width: 74px; height: 74px; border-radius: 50%; display: grid; place-items: center; background: rgba(255, 252, 251, 0.92); color: var(--ink); box-shadow: 0 14px 34px -10px rgba(0,0,0,0.5); animation: heartbeat 1.8s ease-in-out infinite; }
 .hero__play svg { margin-left: 3px; fill: var(--ink); }
+
+/* ---------- Reviews section background video ---------- */
+.testi__bg { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; z-index: 0; }
+.testi__overlay { position: absolute; inset: 0; z-index: 1; background:
+  radial-gradient(70% 90% at 15% 20%, rgba(138, 36, 80, 0.55), transparent 60%),
+  linear-gradient(135deg, rgba(76, 21, 53, 0.9) 0%, rgba(110, 29, 68, 0.82) 55%, rgba(42, 16, 32, 0.9) 100%); }
+.testi > .container { position: relative; z-index: 2; }
+.testi__head { text-align: center; margin-bottom: clamp(36px, 5vw, 60px); }
+.testi__head .eyebrow { justify-content: center; }
+.testi__head .eyebrow::after { content: ''; width: 34px; height: 1px; background: currentColor; }
+.testi__head .display-2 { color: var(--cream); }
+.testi__head .display-2 em { -webkit-text-fill-color: transparent; }
+@media (max-width: 680px) { .testi__head { margin-bottom: 28px; } }

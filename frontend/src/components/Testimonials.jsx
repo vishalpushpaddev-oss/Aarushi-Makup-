@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { testimonials, IMG } from '../data/site'
 import { Icon, Eyebrow } from './ui'
@@ -9,15 +9,46 @@ export default function Testimonials({ id }) {
   const [i, setI] = useState(0)
   const n = testimonials.length
   const go = (d) => setI((v) => (v + d + n) % n)
+  const videoRef = useRef(null)
+  const sectionRef = useRef(null)
 
   useEffect(() => {
     const t = setInterval(() => setI((v) => (v + 1) % n), 6500)
     return () => clearInterval(t)
   }, [i, n])
 
+  // Background video sirf tab chale jab section screen par ho
+  useEffect(() => {
+    const v = videoRef.current
+    const sec = sectionRef.current
+    if (!v || !sec) return
+    const io = new IntersectionObserver(
+      ([e]) => (e.isIntersecting ? v.play().catch(() => {}) : v.pause()),
+      { threshold: 0.2 },
+    )
+    io.observe(sec)
+    return () => io.disconnect()
+  }, [])
+
   const t = testimonials[i]
   return (
-    <section className="testi" id={id}>
+    <section className="testi" id={id} ref={sectionRef}>
+      <video
+        ref={videoRef}
+        className="testi__bg"
+        src="/videos/reviews-bg.mp4"
+        poster="/images/reviews-bg.webp"
+        muted
+        loop
+        playsInline
+        preload="none"
+        aria-hidden="true"
+      />
+      <div className="testi__overlay" aria-hidden="true" />
+      <div className="container testi__head">
+        <Eyebrow light>Real reviews · Justdial &amp; Google</Eyebrow>
+        <h2 className="display-2">Loved by our <em>clients</em></h2>
+      </div>
       <div className="container testi__grid">
         <div className="testi__media">
           <img src={IMG.realBride2} alt="Bridal makeup by Aarushi Makeup Studio, Mhow" className="is-on" />
@@ -26,7 +57,6 @@ export default function Testimonials({ id }) {
           </span>
         </div>
         <div className="testi__body">
-          <Eyebrow light>Real reviews · Justdial</Eyebrow>
           <div className="testi__stars" aria-label="5 stars">★★★★★</div>
           <blockquote key={i} className="testi__quote">“{t.text}”</blockquote>
           <div className="testi__who">
