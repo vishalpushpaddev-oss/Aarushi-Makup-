@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import { IMG, brand, brands, stats, whyUs, packages, services, portfolio, courses, posts } from '../data/site'
 import { Reveal, Eyebrow, SectionHead, Button, Marquee, Icon } from '../components/ui'
 import Testimonials from '../components/Testimonials'
+import { SectionNav } from '../components/ScrollNav'
 import { CountUp, Parallax } from '../components/motion'
 import { areasServed } from '../data/seo'
 
@@ -49,7 +50,7 @@ function Hero() {
             Skin-first HD & airbrush makeup for brides who want to look like themselves — only more radiant, in every photo and every hour of the day.
           </p>
           <div className="hero__actions">
-            <Button to="/contact" variant="gold">Enquire Now</Button>
+            <Button to="/contact#enquiry" variant="gold">Enquire Now</Button>
             <Button to="/portfolio" variant="ghost-light">View portfolio</Button>
           </div>
         </div>
@@ -141,7 +142,7 @@ function Intro() {
 
 function ServicesStrip() {
   return (
-    <section className="section section--tint">
+    <section className="section section--tint" id="services">
       <div className="container">
         <SectionHead
           eyebrow="What we do"
@@ -173,7 +174,7 @@ function ServicesStrip() {
 
 function Packages() {
   return (
-    <section className="section">
+    <section className="section" id="packages">
       <div className="container">
         <SectionHead center eyebrow="Bridal packages" title="Choose your <em>bridal</em> finish" text="Every package includes a consultation, hairstyling and draping. Trial sessions are available on request." />
         <div className="pkg-grid">
@@ -209,7 +210,7 @@ const whyIcons = ['sparkle', 'award', 'calendar', 'clock', 'pin', 'check']
 
 function Why() {
   return (
-    <section className="section why">
+    <section className="section why" id="why-us">
       <div className="container">
         <SectionHead light eyebrow="Why brides choose us" title="Six promises we keep, <em>every single time.</em>" text="From the first consultation to the last touch-up, here is what every bride can count on." />
         <div className="bento">
@@ -239,7 +240,7 @@ function Why() {
 function Work() {
   const picks = portfolio.slice(0, 8)
   return (
-    <section className="section">
+    <section className="section" id="portfolio">
       <div className="container">
         <SectionHead eyebrow="Portfolio" title="Real brides. <em>Real</em> glow." action={<Button to="/portfolio" variant="ghost">See full portfolio</Button>} />
       </div>
@@ -263,7 +264,7 @@ function Work() {
 function AcademyTeaser() {
   const c = courses[0]
   return (
-    <section className="section section--tint">
+    <section className="section section--tint" id="academy">
       <div className="container academy-teaser">
         <Reveal className="academy-teaser__media">
           <div className="reveal-img academy-teaser__frame">
@@ -301,7 +302,7 @@ function AcademyTeaser() {
 
 function Journal() {
   return (
-    <section className="section">
+    <section className="section" id="journal">
       <div className="container">
         <SectionHead eyebrow="The journal" title="Beauty notes for <em>brides&#8209;to&#8209;be</em>" action={<Button to="/journal" variant="ghost">Read the journal</Button>} />
         <div className="post-grid">
@@ -323,7 +324,7 @@ function Journal() {
 
 function Areas() {
   return (
-    <section className="section areas">
+    <section className="section areas" id="areas">
       <div className="container areas__grid">
         <Reveal>
           <Eyebrow>Areas we serve</Eyebrow>
@@ -371,9 +372,21 @@ function Insta() {
   )
 }
 
+const homeSections = [
+  { id: 'services', label: 'Services' },
+  { id: 'packages', label: 'Packages' },
+  { id: 'why-us', label: 'Why us' },
+  { id: 'portfolio', label: 'Portfolio' },
+  { id: 'reviews', label: 'Reviews' },
+  { id: 'academy', label: 'Academy' },
+  { id: 'journal', label: 'Tips' },
+  { id: 'areas', label: 'Areas' },
+]
+
 export default function Home() {
   return (
     <>
+      <SectionNav items={homeSections} />
       <Hero />
       <Marquee items={brands} />
       <Intro />
@@ -381,7 +394,7 @@ export default function Home() {
       <Packages />
       <Why />
       <Work />
-      <Testimonials />
+      <Testimonials id="reviews" />
       <AcademyTeaser />
       <Journal />
       <Areas />

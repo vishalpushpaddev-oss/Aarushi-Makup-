@@ -16,7 +16,7 @@ export default function Footer() {
             Let's create your <em>forever</em> look.
           </h2>
           <div className="footer__cta-actions">
-            <Button to="/contact" variant="gold">Enquire Now</Button>
+            <Button to="/contact#enquiry" variant="gold">Enquire Now</Button>
             <Button href={`https://wa.me/${brand.whatsapp}`} variant="ghost-light">Chat on WhatsApp</Button>
           </div>
         </div>

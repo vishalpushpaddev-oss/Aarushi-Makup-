@@ -3,6 +3,7 @@ import { Link, NavLink } from 'react-router-dom'
 import { brand, nav } from '../data/site'
 import { Icon } from './ui'
 import { ScrollProgress } from './motion'
+import { openEnquiry } from './enquiry'
 
 export function Logo({ light }) {
   return (
@@ -46,7 +47,7 @@ export default function Header() {
               <Icon name="phone" size={15} />
               {brand.phone}
             </a>
-            <Link to="/contact" className="btn btn--solid btn--sm" onClick={() => setOpen(false)}>
+            <Link to="/contact#enquiry" className="btn btn--solid btn--sm" onClick={(e) => { setOpen(false); openEnquiry(e) }}>
               <span>Enquire Now</span>
             </Link>
             <button className="burger" aria-label="Menu" aria-expanded={open} onClick={() => setOpen((v) => !v)}>

@@ -1,13 +1,21 @@
+import { useState } from 'react'
 import { IMG, brand } from '../data/site'
 import { PageHero, Reveal, Eyebrow, Icon } from '../components/ui'
 import BookingForm from '../components/BookingForm'
 
+const MAP_QUERY = `Aarushi Makeup Studio & Academy, ${brand.address}`
+const mapViews = [
+  { key: 'h', label: 'Satellite' },
+  { key: 'm', label: 'Map' },
+]
+
 export default function Contact() {
+  const [mapView, setMapView] = useState('h')
   const tel = brand.phone.replace(/\s/g, '')
   const cards = [
     { icon: 'phone', label: 'Call', value: brand.phone, href: `tel:${tel}` },
     brand.email && { icon: 'mail', label: 'Email', value: brand.email, href: `mailto:${brand.email}` },
-    { icon: 'pin', label: 'Directions', value: 'Open in Google Maps', href: `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent('Aarushi Makeup Studio & Academy, ' + brand.address)}` },
+    { icon: 'pin', label: 'Directions', value: 'Open in Google Maps', href: `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(MAP_QUERY)}` },
     { icon: 'clock', label: 'Hours', value: brand.hours },
   ].filter(Boolean)
   return (
@@ -40,18 +48,33 @@ export default function Contact() {
               <span>{brand.address}</span>
             </Reveal>
           </div>
-          <Reveal delay={120} className="contact__form">
+          <Reveal delay={120} className="contact__form" id="enquiry">
             <h3>Booking enquiry</h3>
             <BookingForm />
           </Reveal>
         </div>
       </section>
       <section className="map">
+        {/* t=h: satellite + labels, t=m: normal map */}
         <iframe
-          title="Studio location"
+          key={mapView}
+          title="Aarushi Makeup Studio location on Google Maps"
           loading="lazy"
-          src={`https://www.google.com/maps?q=${encodeURIComponent(brand.address)}&output=embed`}
+          referrerPolicy="no-referrer-when-downgrade"
+          src={`https://maps.google.com/maps?q=${encodeURIComponent(MAP_QUERY)}&t=${mapView}&z=18&output=embed`}
         />
+        <div className="map__bar">
+          <div className="map__toggle" role="tablist" aria-label="Map view">
+            {mapViews.map((v) => (
+              <button key={v.key} role="tab" aria-selected={mapView === v.key} className={mapView === v.key ? 'is-on' : ''} onClick={() => setMapView(v.key)}>
+                {v.label}
+              </button>
+            ))}
+          </div>
+          <a className="map__dir" href={`https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(MAP_QUERY)}`} target="_blank" rel="noreferrer">
+            <Icon name="pin" size={16} /> Get directions
+          </a>
+        </div>
       </section>
     </>
   )

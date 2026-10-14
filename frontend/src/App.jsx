@@ -3,6 +3,7 @@ import Header from './components/Header'
 import Footer from './components/Footer'
 import WhatsAppFab from './components/WhatsAppFab'
 import MobileCta from './components/MobileCta'
+import { BackToTop } from './components/ScrollNav'
 import { SmoothScroll, Cursor } from './components/motion'
 import Home from './pages/Home'
 import About from './pages/About'
@@ -34,6 +35,7 @@ export default function App() {
       <Footer />
       <WhatsAppFab />
       <MobileCta />
+      <BackToTop />
     </>
   )
 }

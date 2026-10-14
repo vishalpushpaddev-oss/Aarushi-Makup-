@@ -49,7 +49,7 @@ export default function Academy() {
                   </ul>
                   <div className="course__foot">
                     <strong>{c.fee}</strong>
-                    <Button to="/contact" variant="ghost">Enrol</Button>
+                    <Button to="/contact" variant="ghost" enquiry="Academy course">Enrol</Button>
                   </div>
                 </div>
               </Reveal>

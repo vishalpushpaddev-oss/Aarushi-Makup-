@@ -2,20 +2,23 @@ import { useEffect, useRef, useState } from 'react'
 import { useLocation } from 'react-router-dom'
 import Lenis from 'lenis'
 import { applyHead } from '../data/seo'
+import { setLenis } from './scroll'
 
 const isBrowser = typeof window !== 'undefined'
+
 const reducedMotion = () => isBrowser && window.matchMedia('(prefers-reduced-motion: reduce)').matches
 const finePointer = () => isBrowser && window.matchMedia('(hover: hover) and (pointer: fine)').matches
 
 /** Smooth scrolling (Lenis) + har page change par top par le jaana. */
 export function SmoothScroll() {
   const lenis = useRef(null)
-  const { pathname } = useLocation()
+  const { pathname, hash } = useLocation()
 
   useEffect(() => {
     if (reducedMotion()) return
     const l = new Lenis({ duration: 1.15, easing: (t) => 1 - Math.pow(1 - t, 4) })
     lenis.current = l
+    setLenis(l)
     let id = requestAnimationFrame(function raf(time) {
       l.raf(time)
       id = requestAnimationFrame(raf)
@@ -24,14 +27,25 @@ export function SmoothScroll() {
       cancelAnimationFrame(id)
       l.destroy()
       lenis.current = null
+      setLenis(null)
     }
   }, [])
 
   useEffect(() => {
+    applyHead(pathname)
+    const target = hash && document.getElementById(hash.slice(1))
+    if (target) {
+      // Naya page render hone ke baad form/section tak scroll
+      const id = setTimeout(() => {
+        const top = target.getBoundingClientRect().top + window.scrollY - 90
+        if (lenis.current) lenis.current.scrollTo(top, { duration: 1 })
+        else window.scrollTo({ top, behavior: 'smooth' })
+      }, 60)
+      return () => clearTimeout(id)
+    }
     if (lenis.current) lenis.current.scrollTo(0, { immediate: true })
     else window.scrollTo({ top: 0 })
-    applyHead(pathname)
-  }, [pathname])
+  }, [pathname, hash])
 
   return null
 }

@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
 import { Link } from 'react-router-dom'
+import { openEnquiry } from './enquiry'
 
 /** Scroll par fade/slide-in animation. */
 export function Reveal({ as: Tag = 'div', delay = 0, className = '', children, ...rest }) {
@@ -48,7 +49,7 @@ export function SectionHead({ eyebrow, title, text, light, center, action }) {
   )
 }
 
-export function Button({ to, href, variant = 'solid', children, icon = true, ...rest }) {
+export function Button({ to, href, variant = 'solid', children, icon = true, enquiry, ...rest }) {
   const cls = `btn btn--${variant}`
   const inner = (
     <>
@@ -56,7 +57,10 @@ export function Button({ to, href, variant = 'solid', children, icon = true, ...
       {icon && <Icon name="arrow" />}
     </>
   )
-  if (to) return <Link to={to} className={cls} {...rest}>{inner}</Link>
+  if (to) {
+    const onClick = to.startsWith('/contact') ? (e) => openEnquiry(e, enquiry) : undefined
+    return <Link to={to} className={cls} onClick={onClick} {...rest}>{inner}</Link>
+  }
   if (href) return <a href={href} className={cls} target="_blank" rel="noreferrer" {...rest}>{inner}</a>
   return <button className={cls} {...rest}>{inner}</button>
 }

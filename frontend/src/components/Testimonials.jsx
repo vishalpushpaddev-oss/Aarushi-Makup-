@@ -4,7 +4,7 @@ import { Icon, Eyebrow } from './ui'
 
 const faces = [IMG.bride1, IMG.bride6, IMG.face, IMG.bride2, IMG.bride3]
 
-export default function Testimonials() {
+export default function Testimonials({ id }) {
   const [i, setI] = useState(0)
   const n = testimonials.length
   const go = (d) => setI((v) => (v + d + n) % n)
@@ -16,7 +16,7 @@ export default function Testimonials() {
 
   const t = testimonials[i]
   return (
-    <section className="testi">
+    <section className="testi" id={id}>
       <div className="container testi__grid">
         <div className="testi__media">
           {faces.map((src, k) => (

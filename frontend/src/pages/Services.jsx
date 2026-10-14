@@ -1,6 +1,14 @@
 import { useState } from 'react'
 import { IMG, services, packages, priceList, faqs } from '../data/site'
 import { PageHero, Reveal, SectionHead, Button, Icon } from '../components/ui'
+import { SectionNav } from '../components/ScrollNav'
+
+const serviceSections = [
+  { id: 'services', label: 'Services' },
+  { id: 'rates', label: 'Rate card' },
+  { id: 'packages', label: 'Packages' },
+  { id: 'faq', label: 'FAQ' },
+]
 
 export default function Services() {
   const [tab, setTab] = useState(0)
@@ -8,9 +16,10 @@ export default function Services() {
 
   return (
     <>
+      <SectionNav items={serviceSections} />
       <PageHero eyebrow="Makeup services & prices in Mhow" title="Looks for <em>every</em> moment" text="Transparent pricing, luxury products and a team that shows up early. Here's everything we offer." img={IMG.bride7} />
 
-      <section className="section">
+      <section className="section" id="services">
         <div className="container">
           {services.map((s, i) => (
             <Reveal key={s.slug} className={`svc-row ${i % 2 ? 'svc-row--flip' : ''}`}>
@@ -29,7 +38,7 @@ export default function Services() {
         </div>
       </section>
 
-      <section className="section section--dark">
+      <section className="section section--dark" id="rates">
         <div className="container">
           <SectionHead light center eyebrow="Rate card" title="Simple, <em>honest</em> pricing" text="Prices are for the city studio or venue. Outstation and destination bookings are quoted separately." />
           <div className="tabs" role="tablist">
@@ -51,7 +60,7 @@ export default function Services() {
         </div>
       </section>
 
-      <section className="section">
+      <section className="section" id="packages">
         <div className="container">
           <SectionHead center eyebrow="Bridal packages" title="Compare <em>packages</em>" />
           <div className="compare">
@@ -71,7 +80,7 @@ export default function Services() {
         </div>
       </section>
 
-      <section className="section section--tint">
+      <section className="section section--tint" id="faq">
         <div className="container faq-wrap">
           <SectionHead eyebrow="FAQ" title="Good to <em>know</em>" text="Still have questions? Message us on WhatsApp — we're happy to help." />
           <div className="faq">
