@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import { testimonials, IMG } from '../data/site'
 import { Icon, Eyebrow } from './ui'
+import Ratings from './Ratings'
 
 const faces = [IMG.bride1, IMG.bride6, IMG.face, IMG.bride2, IMG.bride3]
 
@@ -43,6 +44,7 @@ export default function Testimonials({ id }) {
             </div>
             <button onClick={() => go(1)} aria-label="Next"><Icon name="right" /></button>
           </div>
+          <Ratings light />
         </div>
       </div>
     </section>

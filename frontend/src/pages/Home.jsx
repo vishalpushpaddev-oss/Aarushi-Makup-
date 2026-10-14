@@ -128,7 +128,7 @@ function Intro() {
             </p>
           </Reveal>
           <Reveal delay={180} className="intro__points">
-            <div><Icon name="award" /> 5.0★ rated by clients on Justdial</div>
+            <div><Icon name="award" /> 5.0★ rated on Google &amp; Justdial</div>
             <div><Icon name="sparkle" /> Studio, academy & home service in Mhow</div>
           </Reveal>
           <Reveal delay={240}>
@@ -332,7 +332,7 @@ function Areas() {
         </Reveal>
         <Reveal delay={100}>
           <p className="lead">
-            Looking for a bridal makeup artist near you? Visit our studio in Annapurna Colony, Mhow Gaon, or book our home service —
+            Looking for a bridal makeup artist near you? Visit our studio in Shanti Nagar, Mhow (above HDFC Bank, opposite the petrol pump), or book our home service —
             we travel to homes, hotels and wedding venues across Mhow, Indore and nearby towns. Our makeup academy in Mhow also
             welcomes students from Indore, Pithampur and Dhar.
           </p>

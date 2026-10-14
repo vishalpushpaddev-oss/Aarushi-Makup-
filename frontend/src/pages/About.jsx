@@ -4,7 +4,7 @@ import Testimonials from '../components/Testimonials'
 import { CountUp } from '../components/motion'
 
 const timeline = [
-  ['2019', 'The studio opens', 'Aarushi Makeup Studio opens its doors in Annapurna Colony, Mhow.'],
+  ['2019', 'The studio opens', 'Aarushi Makeup Studio & Academy opens its doors in Mhow.'],
   ['2020', 'Home services', 'Started bridal and party makeup at home and at venues across Mhow and Indore.'],
   ['2022', 'Academy launch', 'Began teaching small batches of aspiring makeup artists from Mhow and nearby towns.'],
   ['2024', 'Beyond makeup', 'Added facials, hair care and nail services under one roof.'],

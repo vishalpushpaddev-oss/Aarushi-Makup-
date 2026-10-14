@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { IMG, brand } from '../data/site'
 import { PageHero, Reveal, Eyebrow, Icon } from '../components/ui'
 import BookingForm from '../components/BookingForm'
+import Ratings from '../components/Ratings'
 
 const MAP_QUERY = `Aarushi Makeup Studio & Academy, ${brand.address}`
 const mapViews = [
@@ -46,6 +47,9 @@ export default function Contact() {
             <Reveal className="contact__addr">
               <Icon name="pin" />
               <span>{brand.address}</span>
+            </Reveal>
+            <Reveal className="contact__ratings">
+              <Ratings />
             </Reveal>
           </div>
           <Reveal delay={120} className="contact__form" id="enquiry">

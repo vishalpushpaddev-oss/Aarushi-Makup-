@@ -36,12 +36,18 @@ export const brand = {
   phone: '+91 84604 61764',
   whatsapp: '918460461764',
   email: '', // asli email milne par yahan daalein — khaali rahe to website par email nahi dikhega
-  address: 'Shop No. 03, Annapurna Colony, Mhow Gaon, Mhow, Indore, Madhya Pradesh 453441',
+  address: '2nd Floor, HDFC Bank Building, Shanti Nagar Road, Opp. Petrol Pump, Shanti Nagar, Mhow, Indore, Madhya Pradesh 453441',
   hours: 'Mon – Sun · 8:00 AM – 9:00 PM (by appointment)',
   instagram: 'https://instagram.com/',
   facebook: 'https://facebook.com/',
   youtube: 'https://youtube.com/',
 }
+
+// Asli ratings — Google Maps aur Justdial listing se (count badhne par yahan update karein)
+export const ratings = [
+  { source: 'Justdial', score: '5.0', count: 15, unit: 'ratings', url: 'https://www.justdial.com/Indore/Aarushi-Makeup-Studio-Academy-Lodheshver-Mahadev-Mandir-Mhow/0731PX731-X731-241126174453-J3S7_BZDET' },
+  { source: 'Google', score: '5.0', count: 1, unit: 'review', url: 'https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent('Aarushi makeup studio and academy, Shanti Nagar, Mhow') },
+]
 
 export const nav = [
   { to: '/', label: 'Home' },
@@ -57,7 +63,7 @@ export const stats = [
   { value: '500+', label: 'Brides adorned' },
   { value: '2019', label: 'Serving Mhow since' },
   { value: '1,200+', label: 'Students trained' },
-  { value: '5.0★', label: 'Rated on Justdial' },
+  { value: '5.0★', label: 'Rated on Google & Justdial' },
 ]
 
 export const whyUs = [

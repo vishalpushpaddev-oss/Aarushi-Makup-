@@ -17,7 +17,7 @@ export const pages = {
   '/about': {
     title: `About Us — Makeup Studio in Mhow since 2019 | ${NAME}`,
     description:
-      'Meet the team behind Aarushi Makeup Studio & Academy in Annapurna Colony, Mhow. Skin-first bridal makeup, trusted by brides across Mhow and Indore since 2019.',
+      'Meet the team behind Aarushi Makeup Studio & Academy in Shanti Nagar, Mhow. Skin-first bridal makeup, trusted by brides across Mhow and Indore since 2019.',
   },
   '/portfolio': {
     title: `Bridal Makeup Portfolio — Real Brides | ${NAME}`,
@@ -67,7 +67,7 @@ const business = () => ({
   foundingDate: '2019',
   address: {
     '@type': 'PostalAddress',
-    streetAddress: 'Shop No. 03, Annapurna Colony, Mhow Gaon',
+    streetAddress: '2nd Floor, HDFC Bank Building, Shanti Nagar Road, Opp. Petrol Pump, Shanti Nagar',
     addressLocality: 'Mhow',
     addressRegion: 'Madhya Pradesh',
     postalCode: '453441',
