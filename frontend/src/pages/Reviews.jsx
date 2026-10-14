@@ -19,7 +19,9 @@ export default function Reviews() {
           <div className="rv-summary">
             <Reveal className="rv-score">
               <strong>5.0</strong>
-              <span className="rv-score__stars" aria-label="5 out of 5 stars">★★★★★</span>
+              <span className="rv-score__stars" aria-label="5 out of 5 stars">
+                {[0, 1, 2, 3, 4].map((k) => <i key={k} style={{ '--k': k }}>★</i>)}
+              </span>
               <small>{total} ratings across Justdial &amp; Google</small>
             </Reveal>
             <Reveal delay={100} className="rv-summary__side">

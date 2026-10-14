@@ -27,7 +27,9 @@ export default function Ratings({ light }) {
           <span className="rating__body">
             <span className="rating__score">
               <strong>{r.score}</strong>
-              <span className="rating__stars" aria-hidden="true">★★★★★</span>
+              <span className="rating__stars" aria-hidden="true">
+                {[0, 1, 2, 3, 4].map((k) => <i key={k} style={{ '--k': k }}>★</i>)}
+              </span>
             </span>
             <small>
               {r.count} {r.unit} on {r.source}
