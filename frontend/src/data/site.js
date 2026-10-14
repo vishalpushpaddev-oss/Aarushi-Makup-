@@ -37,10 +37,13 @@ export const IMG = {
   studioDecor: img('studio-decor'),
   studioEntry: img('studio-entry'),
   studioHair: img('studio-hair-station'),
+  aarushi: img('aarushi-portrait'), // Aarushi Piplodiya (owner)
+  aarushiCard: img('aarushi-piplodiya'),
 }
 
 export const brand = {
   name: 'Aarushi',
+  owner: 'Aarushi Piplodiya',
   suffix: 'Makeup Studio & Academy',
   tagline: 'Bridal Makeup Studio & Academy',
   city: 'Mhow, Indore',
@@ -179,6 +182,7 @@ export const portfolio = [
   { src: IMG.studioInside, cat: 'Our studio', title: 'Our studio in Shanti Nagar, Mhow', real: true },
   { src: IMG.realBride1, cat: 'Bridal', title: 'Red lehenga bride', real: true },
   { src: IMG.realEngagement, cat: 'Party', title: 'Engagement soft glam', real: true },
+  { src: IMG.aarushiCard, cat: 'Our studio', title: 'Aarushi Piplodiya — Luxury Makeup Artist', real: true },
   { src: IMG.realSmoothing, cat: 'Hair', title: 'Hair straightening & smoothing', real: true },
   { src: IMG.realHair, cat: 'Hair', title: 'Silky, smooth finish', real: true },
   { src: IMG.hero, cat: 'Bridal', title: 'Statement kundan bride' },

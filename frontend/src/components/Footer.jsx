@@ -27,7 +27,7 @@ export default function Footer() {
         <div className="footer__brand">
           <Logo light />
           <p>
-            {brand.tagline} based in {brand.city}, with home service across Mhow & Indore.
+            {brand.tagline} by {brand.owner}, based in {brand.city}, with home service across Mhow & Indore.
           </p>
           <div className="socials">
             <a href={brand.instagram} target="_blank" rel="noreferrer" aria-label="Instagram"><Icon name="instagram" /></a>

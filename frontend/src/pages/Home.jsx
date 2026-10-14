@@ -105,10 +105,10 @@ function Intro() {
         <Reveal className="intro__media">
           <div className="intro__img-a reveal-img">
             <Parallax speed={0.06}>
-              <img src={IMG.realEngagement} alt="Engagement makeup by Aarushi Makeup Studio, Mhow" />
+              <img src={IMG.aarushi} alt="Aarushi Piplodiya, luxury makeup artist in Mhow" style={{ objectPosition: 'center 18%' }} />
             </Parallax>
           </div>
-          <img className="intro__img-b" src={IMG.palette} alt="" />
+          <img className="intro__img-b" src={IMG.realBride2} alt="Bridal makeup by Aarushi Piplodiya" />
           <span className="intro__sign">Aarushi</span>
         </Reveal>
         <div className="intro__copy">
@@ -120,7 +120,7 @@ function Intro() {
           </Reveal>
           <Reveal delay={100}>
             <p className="lead">
-              Hi, I'm Aarushi. Since opening my studio in Mhow in 2019, I've done one thing obsessively: understanding skin, light and faces so every bride walks
+              Hi, I'm {brand.owner}. Since opening my studio in Mhow in 2019, I've done one thing obsessively: understanding skin, light and faces so every bride walks
               into her wedding feeling completely herself.
             </p>
             <p>

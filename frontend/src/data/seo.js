@@ -16,9 +16,9 @@ export const pages = {
       'Aarushi Makeup Studio & Academy, Mhow — HD & airbrush bridal makeup, engagement, party makeup, facials, hair, nails, home service and professional makeup courses near Indore.',
   },
   '/about': {
-    title: `About Us — Makeup Studio in Mhow since 2019 | ${NAME}`,
+    title: `About Aarushi Piplodiya — Makeup Artist in Mhow since 2019 | ${NAME}`,
     description:
-      'Meet the team behind Aarushi Makeup Studio & Academy in Shanti Nagar, Mhow. Skin-first bridal makeup, trusted by brides across Mhow and Indore since 2019.',
+      'Meet Aarushi Piplodiya, luxury makeup artist and founder of Aarushi Makeup Studio & Academy in Shanti Nagar, Mhow. Skin-first bridal makeup, trusted by brides across Mhow and Indore since 2019.',
   },
   '/portfolio': {
     title: `Bridal Makeup Portfolio — Real Brides | ${NAME}`,
@@ -68,6 +68,7 @@ const business = () => ({
   ...(brand.email ? { email: brand.email } : {}),
   priceRange: '₹₹',
   foundingDate: '2019',
+  founder: { '@type': 'Person', name: brand.owner, jobTitle: 'Luxury Makeup Artist' },
   address: {
     '@type': 'PostalAddress',
     streetAddress: '2nd Floor, HDFC Bank Building, Shanti Nagar Road, Opp. Petrol Pump, Shanti Nagar',

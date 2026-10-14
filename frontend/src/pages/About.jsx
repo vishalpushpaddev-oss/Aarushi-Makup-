@@ -25,12 +25,12 @@ export default function About() {
       <section className="section">
         <div className="container about-split">
           <Reveal className="about-split__media">
-            <img src={IMG.studioDecor} alt="Inside Aarushi Makeup Studio & Academy, Mhow" />
+            <img src={IMG.aarushi} alt="Aarushi Piplodiya, founder of Aarushi Makeup Studio & Academy" style={{ objectPosition: 'center 15%' }} />
             <img src={IMG.studioFront} alt="Studio board above HDFC Bank, Shanti Nagar, Mhow" className="about-split__inset" />
           </Reveal>
           <div>
             <Reveal>
-              <Eyebrow>Hello, I'm {brand.name}</Eyebrow>
+              <Eyebrow>Hello, I'm {brand.owner}</Eyebrow>
               <h2 className="display-2">I believe a bride should <em>recognise herself</em> in the mirror.</h2>
             </Reveal>
             <Reveal delay={100}>
