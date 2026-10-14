@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom'
 import { brand, nav, IMG } from '../data/site'
 import { Icon, Button } from './ui'
 import { Logo } from './Header'
+import { landingPages } from '../data/landing'
 
 const YEAR = new Date().getFullYear()
 
@@ -43,13 +44,11 @@ export default function Footer() {
           </ul>
         </div>
         <div>
-          <h4>Services</h4>
+          <h4>Popular searches</h4>
           <ul>
-            <li><Link to="/services">Bridal Makeup</Link></li>
-            <li><Link to="/services">Engagement & Reception</Link></li>
-            <li><Link to="/services">Party & Family</Link></li>
-            <li><Link to="/academy">Makeup Courses</Link></li>
-            <li><Link to="/academy">Self-Grooming Workshop</Link></li>
+            {landingPages.map((p) => (
+              <li key={p.slug}><Link to={p.slug}>{p.nav}</Link></li>
+            ))}
           </ul>
         </div>
         <div>

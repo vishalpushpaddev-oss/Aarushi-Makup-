@@ -153,7 +153,7 @@ function ServicesStrip() {
         <div className="svc-grid">
           {services.map((s, i) => (
             <Reveal key={s.slug} delay={(i % 3) * 90} className="svc-card">
-              <Link to="/services" data-cursor="Explore">
+              <Link to={s.page || '/services'} data-cursor="Explore">
                 <div className="svc-card__img">
                   <img src={s.img} alt={`${s.title} in Mhow`} loading="lazy" />
                 </div>

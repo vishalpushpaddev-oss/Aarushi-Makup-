@@ -13,6 +13,8 @@ import Academy from './pages/Academy'
 import Journal from './pages/Journal'
 import Contact from './pages/Contact'
 import NotFound from './pages/NotFound'
+import Landing from './pages/Landing'
+import { landingPages } from './data/landing'
 
 export default function App() {
   return (
@@ -29,6 +31,9 @@ export default function App() {
           <Route path="/academy" element={<Academy />} />
           <Route path="/journal" element={<Journal />} />
           <Route path="/contact" element={<Contact />} />
+          {landingPages.map((p) => (
+            <Route key={p.slug} path={p.slug} element={<Landing slug={p.slug} />} />
+          ))}
           <Route path="*" element={<NotFound />} />
         </Routes>
       </main>

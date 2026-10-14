@@ -1,0 +1,170 @@
+// SEO landing pages — har page ek search (jaise "bridal makeup artist in Mhow") ke liye.
+// Content asli rakhein: prices/services badlein to yahan bhi update karein.
+import { IMG } from './site'
+
+export const landingPages = [
+  {
+    slug: '/bridal-makeup-artist-mhow',
+    nav: 'Bridal Makeup in Mhow',
+    title: 'Best Bridal Makeup Artist in Mhow, Indore | HD & Airbrush Bridal Makeup',
+    description:
+      'Bridal makeup artist in Mhow & Indore — HD and airbrush dulhan makeup with hairstyling, draping and home service. Packages from ₹25,000. Book a trial at Aarushi Makeup Studio.',
+    h1: 'Bridal Makeup Artist in Mhow, Indore',
+    hero: 'Your wedding look, <em>made for you</em>',
+    heroText: 'HD and airbrush bridal makeup, hairstyling and draping — at our Mhow studio or at your home and venue.',
+    img: IMG.hero,
+    gallery: [IMG.bride1, IMG.bride5, IMG.bride11, IMG.bride3],
+    price: 'from ₹25,000',
+    intro: [
+      'Looking for a bridal makeup artist in Mhow who understands Indian bridal looks? At Aarushi Makeup Studio & Academy we create dulhan makeup that looks natural in person and flawless in photos and 4K video — whether you love a soft, dewy look or a full traditional glam.',
+      'Every bridal booking starts with a consultation. We look at your skin, your lehenga or saree, your jewellery and the venue lighting, then design a look that suits you. Choose HD makeup for a skin-like finish, or airbrush makeup for a lightweight, sweat-proof finish that lasts through long ceremonies.',
+      'Brides from Mhow, Mhow Cantonment, Indore, Rau, Pithampur and Dhar book us for their wedding day, engagement, haldi, mehendi and reception. Can\'t come to the studio? Our bridal home service brings the full kit to your home, hotel or wedding venue.',
+    ],
+    includes: [
+      'Bridal consultation & look planning',
+      'HD or airbrush bridal makeup',
+      'Bridal hairstyling with accessories',
+      'Dupatta / saree draping & jewellery setting',
+      'Lashes, touch-up kit and optional trial',
+      'Home / venue service in Mhow & Indore',
+    ],
+    faqs: [
+      { q: 'What is the price of bridal makeup in Mhow?', a: 'Our HD bridal makeup starts at ₹25,000 and airbrush bridal makeup at ₹35,000, including hairstyling and draping. Destination and multi-function packages are quoted on request.' },
+      { q: 'Do you do bridal makeup at home in Mhow and Indore?', a: 'Yes. We offer bridal home service at your home, hotel or wedding venue across Mhow and Indore. Travel outside the city is charged at actuals.' },
+      { q: 'Can I take a bridal makeup trial before booking?', a: 'Yes, a paid pre-bridal trial is available. If you book your bridal package, the trial fee is adjusted in the final amount.' },
+      { q: 'How early should I book my bridal makeup artist?', a: 'For the Nov–Feb wedding season we recommend booking 4–6 months in advance, as peak dates fill up quickly.' },
+    ],
+    related: ['/hd-airbrush-makeup-mhow', '/party-makeup-mhow', '/beauty-parlour-mhow'],
+  },
+  {
+    slug: '/hd-airbrush-makeup-mhow',
+    nav: 'HD & Airbrush Makeup',
+    title: 'HD Makeup & Airbrush Makeup in Mhow, Indore | Aarushi Makeup Studio',
+    description:
+      'HD makeup and airbrush makeup in Mhow & Indore for brides, engagement and parties. Long-lasting, camera-ready, sweat-proof finish. Know the difference and book today.',
+    h1: 'HD Makeup & Airbrush Makeup in Mhow',
+    hero: 'Camera-ready skin, <em>all day long</em>',
+    heroText: 'Two modern makeup techniques for a flawless finish under flash, ring lights and 4K video.',
+    img: IMG.bride5,
+    gallery: [IMG.hero, IMG.bride6, IMG.face, IMG.bride2],
+    price: 'from ₹25,000 (bridal)',
+    intro: [
+      'HD makeup and airbrush makeup are the two most requested finishes for weddings today. Both are designed to look seamless on high-definition cameras, but they suit different skin types and functions.',
+      'HD makeup uses fine, light-reflecting products applied by hand and brush. It gives a natural, skin-like finish and is ideal for close-up photography and brides who prefer a soft look. Airbrush makeup is sprayed in ultra-thin layers using an airbrush gun. It feels weightless, resists sweat and transfer, and lasts through long summer weddings and outdoor functions.',
+      'Not sure which one is right for you? At our Mhow studio we check your skin type, the season and your function timings and recommend the finish that will look best — and stay put — on your day.',
+    ],
+    includes: [
+      'HD makeup — natural, skin-like finish',
+      'Airbrush makeup — weightless & sweat-proof',
+      'Skin prep and primer matched to your skin type',
+      'Suitable for bridal, engagement, reception & shoots',
+      'Premium international products',
+      'Studio or home service in Mhow & Indore',
+    ],
+    faqs: [
+      { q: 'What is the difference between HD and airbrush makeup?', a: 'HD makeup is applied by hand and gives a natural, skin-like finish. Airbrush makeup is sprayed in thin layers, feels lighter and is more sweat- and transfer-resistant, so it lasts longer in heat.' },
+      { q: 'Which is better for a summer wedding?', a: 'Airbrush makeup is usually the better choice for summer and outdoor weddings because it resists sweat and humidity.' },
+      { q: 'Is airbrush makeup suitable for dry skin?', a: 'Yes, with the right skin prep. We hydrate and prime the skin first and choose formulas that suit dry skin.' },
+    ],
+    related: ['/bridal-makeup-artist-mhow', '/party-makeup-mhow', '/makeup-course-mhow'],
+  },
+  {
+    slug: '/party-makeup-mhow',
+    nav: 'Party & Engagement Makeup',
+    title: 'Party Makeup, Engagement & Reception Makeup in Mhow | Aarushi Studio',
+    description:
+      'Party makeup in Mhow & Indore for engagement, reception, sangeet, haldi, mehendi and family functions. Soft glam to full glam, group bookings and home service. From ₹5,000.',
+    h1: 'Party, Engagement & Reception Makeup in Mhow',
+    hero: 'Every function, <em>its own glow</em>',
+    heroText: 'Soft glam, dewy or full glam looks for engagements, receptions, sangeet, haldi, mehendi and family functions.',
+    img: IMG.bride10,
+    gallery: [IMG.bride2, IMG.bride6, IMG.bride4, IMG.face],
+    price: 'from ₹5,000',
+    intro: [
+      'Need party makeup in Mhow for an engagement, reception, sangeet or a family wedding? Our team creates looks that shine under evening lights and photograph beautifully — from soft, natural glam to bold eyes and statement lips.',
+      'For brides, we plan each function as part of one story: a fresh, waterproof look for haldi and mehendi, a glamorous engagement look and a show-stopping reception finish. For mothers, sisters, bridesmaids and guests, we offer party makeup and group bookings with a dedicated artist team.',
+      'Visit our studio in Shanti Nagar, Mhow, or book home service across Mhow and Indore so the whole family can get ready together.',
+    ],
+    includes: [
+      'Engagement & reception makeup',
+      'Sangeet, cocktail, haldi & mehendi looks',
+      'Party makeup for family & guests',
+      'Hairstyling and saree / lehenga draping',
+      'Group bookings with multiple artists',
+      'Home service in Mhow & Indore',
+    ],
+    faqs: [
+      { q: 'What is the price of party makeup in Mhow?', a: 'Party makeup for guests starts at ₹5,000, haldi/mehendi looks at ₹8,000, sangeet/cocktail at ₹12,000 and engagement/reception looks at ₹15,000.' },
+      { q: 'Do you take group bookings for family makeup?', a: 'Yes. For family and bridesmaid bookings we send a team of artists so everyone is ready on time.' },
+      { q: 'Is hairstyling included with party makeup?', a: 'Hairstyling and draping can be added to any party makeup booking. Ask us for a combined package.' },
+    ],
+    related: ['/bridal-makeup-artist-mhow', '/hd-airbrush-makeup-mhow', '/beauty-parlour-mhow'],
+  },
+  {
+    slug: '/makeup-course-mhow',
+    nav: 'Makeup Course in Mhow',
+    title: 'Makeup Course in Mhow & Indore | Professional Makeup Artist Academy',
+    description:
+      'Learn makeup in Mhow: professional makeup artist course, self-grooming workshop and hairstyling masterclass. Small batches, real models, certificate and portfolio shoot.',
+    h1: 'Makeup Course in Mhow — Makeup Academy near Indore',
+    hero: 'Become a <em>makeup artist</em>',
+    heroText: 'Hands-on makeup and hairstyling courses taught by a working bridal makeup artist in Mhow.',
+    img: IMG.studio2,
+    gallery: [IMG.brushes, IMG.palette, IMG.products, IMG.bride5],
+    price: 'from ₹9,999',
+    intro: [
+      'Want to become a professional makeup artist? Aarushi Makeup Studio & Academy in Mhow offers practical makeup courses for beginners, working artists and anyone who wants to learn self-makeup.',
+      'Our professional makeup artist course covers skin science, colour theory, HD and airbrush techniques, bridal and party looks, and the business side — pricing, clients and building your portfolio. Classes are taught in small batches with practice on real models, so you get personal correction every day.',
+      'Students join us from Mhow, Indore, Pithampur, Dhar and nearby towns. Weekend batches are available, and every student receives a certificate on completion.',
+    ],
+    includes: [
+      'Professional Makeup Artistry — 30 days',
+      'Self-Grooming Workshop — 2 days',
+      'Hairstyling Masterclass — 7 days',
+      'Corporate grooming sessions',
+      'Small batches & real-model practice',
+      'Certificate + portfolio shoot',
+    ],
+    faqs: [
+      { q: 'What is the fee for a makeup course in Mhow?', a: 'The self-grooming workshop starts at ₹9,999, the hairstyling masterclass at ₹35,000 and the 30-day professional makeup artistry course at ₹1,25,000.' },
+      { q: 'Do I need experience to join the professional makeup course?', a: 'No. The professional course starts from the basics and takes you up to bridal and HD/airbrush techniques.' },
+      { q: 'Will I get a certificate?', a: 'Yes, every student receives a certificate on successful completion, along with a portfolio shoot in the professional course.' },
+    ],
+    related: ['/hd-airbrush-makeup-mhow', '/bridal-makeup-artist-mhow', '/beauty-parlour-mhow'],
+    enquiry: 'Academy course',
+  },
+  {
+    slug: '/beauty-parlour-mhow',
+    nav: 'Beauty Parlour in Mhow',
+    title: 'Beauty Parlour in Mhow | Facials, Hair Spa, Nails & Makeup',
+    description:
+      'Beauty parlour in Shanti Nagar, Mhow for facials, pre-bridal skin care, hair spa & styling, nail art & extensions and makeup. Studio and home service in Mhow & Indore.',
+    h1: 'Beauty Parlour in Mhow — Facials, Hair & Nails',
+    hero: 'Beauty care, <em>under one roof</em>',
+    heroText: 'Facials, pre-bridal skin care, hair care, nail art and makeup at our studio in Shanti Nagar, Mhow.',
+    img: IMG.bride6,
+    gallery: [IMG.face, IMG.sareePink, IMG.lipstick, IMG.bride4],
+    price: 'from ₹800',
+    intro: [
+      'Aarushi Makeup Studio & Academy is a beauty parlour and makeup studio in Shanti Nagar, Mhow — above HDFC Bank, opposite the petrol pump. Along with bridal and party makeup, we offer the beauty services you need before any big occasion.',
+      'Book pre-bridal facials and clean-ups so your skin is glowing and camera-ready, hair spa and hair treatments, everyday and occasion hairstyling, and nail art, gel polish and nail extensions designed to match your outfit.',
+      'Short on time? Many services are also available as home service across Mhow and Indore.',
+    ],
+    includes: [
+      'Facials, clean-ups & pre-bridal skin care',
+      'Hair spa, treatments & hairstyling',
+      'Nail art, gel polish & extensions',
+      'Party & bridal makeup',
+      'Saree & dupatta draping',
+      'Home service available',
+    ],
+    faqs: [
+      { q: 'Where is your beauty parlour in Mhow?', a: 'We are on the 2nd floor of the HDFC Bank building, Shanti Nagar Road, opposite the petrol pump, Shanti Nagar, Mhow.' },
+      { q: 'Do you offer pre-bridal packages?', a: 'Yes. We plan pre-bridal facials and skin care in the weeks before your wedding so your skin is ready for your bridal makeup.' },
+      { q: 'Do I need an appointment?', a: 'Yes, we work by appointment. Call or WhatsApp us to book a slot.' },
+    ],
+    related: ['/bridal-makeup-artist-mhow', '/party-makeup-mhow', '/makeup-course-mhow'],
+  },
+]
+
+export const landingBySlug = Object.fromEntries(landingPages.map((p) => [p.slug, p]))

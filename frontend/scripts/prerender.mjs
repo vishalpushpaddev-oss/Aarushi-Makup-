@@ -31,6 +31,7 @@ fs.writeFileSync(path.join(dist, '404.html'), page('/404'))
 
 const today = new Date().toISOString().slice(0, 10)
 const priority = { '/': '1.0', '/services': '0.9', '/portfolio': '0.8', '/academy': '0.8', '/contact': '0.8' }
+for (const r of routes) if (r.endsWith('-mhow')) priority[r] = '0.9'
 fs.writeFileSync(
   path.join(dist, 'sitemap.xml'),
   `<?xml version="1.0" encoding="UTF-8"?>

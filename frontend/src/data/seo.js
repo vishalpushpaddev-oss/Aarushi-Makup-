@@ -1,6 +1,7 @@
 // SEO: har page ka title/description + Google structured data (JSON-LD).
 // Build ke time (scripts/prerender.mjs) aur browser me (App.jsx) dono jagah yahi use hota hai.
 import { brand, courses, faqs } from './site'
+import { landingPages, landingBySlug } from './landing'
 
 // ⚠️ Hosting ke baad apna asli domain yahan daalein (end me "/" nahi).
 export const SITE_URL = 'https://aarushimakeupstudio.vercel.app'
@@ -44,6 +45,8 @@ export const pages = {
     description: `Book bridal or party makeup in Mhow. Call or WhatsApp ${brand.phone}. Visit us at ${brand.address}.`,
   },
 }
+
+for (const p of landingPages) pages[p.slug] = { title: p.title, description: p.description }
 
 export const notFound = {
   title: `Page not found | ${NAME}`,
@@ -119,6 +122,22 @@ export function structuredData(path) {
           provider: { '@type': 'Organization', name: NAME, sameAs: `${SITE_URL}/` },
         },
       })),
+    })
+  }
+  const lp = landingBySlug[path]
+  if (lp) {
+    graph.push({
+      '@type': 'Service',
+      name: lp.h1,
+      description: lp.description,
+      url: `${SITE_URL}${path}`,
+      areaServed: areasServed.map((name) => ({ '@type': 'City', name })),
+      provider: { '@id': `${SITE_URL}/#business` },
+    })
+    graph.push(business())
+    graph.push({
+      '@type': 'FAQPage',
+      mainEntity: lp.faqs.map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })),
     })
   }
   if (path !== '/' && pages[path]) graph.push(breadcrumb(path))

@@ -106,12 +106,12 @@ export const packages = [
 ]
 
 export const services = [
-  { slug: 'bridal', title: 'Bridal Makeup', img: IMG.bride1, price: 'from ₹25,000', text: 'HD and airbrush bridal looks for the wedding day, designed around your outfit, jewellery and skin.' },
-  { slug: 'engagement', title: 'Engagement & Reception', img: IMG.bride10, price: 'from ₹15,000', text: 'Glam, soft-glam or dewy — a look that shines under evening lights and on the dance floor.' },
-  { slug: 'party', title: 'Party & Family Makeup', img: IMG.bride6, price: 'from ₹5,000', text: 'For mothers, sisters, bridesmaids and guests. Group bookings get a dedicated artist team.' },
-  { slug: 'skin', title: 'Facials & Skin Care', img: IMG.face, price: 'from ₹1,500', text: 'Pre-bridal facials, clean-ups and glow treatments so your skin is camera-ready before the big day.' },
-  { slug: 'hair', title: 'Hair Care & Styling', img: IMG.sareePink, price: 'from ₹1,000', text: 'Hair spa, treatments, bridal buns, braids, waves and saree / lehenga draping.' },
-  { slug: 'nails', title: 'Nail Art & Extensions', img: IMG.lipstick, price: 'from ₹800', text: 'Gel polish, nail extensions and bridal nail art to match your outfit.' },
+  { slug: 'bridal', page: '/bridal-makeup-artist-mhow', title: 'Bridal Makeup', img: IMG.bride1, price: 'from ₹25,000', text: 'HD and airbrush bridal looks for the wedding day, designed around your outfit, jewellery and skin.' },
+  { slug: 'engagement', page: '/party-makeup-mhow', title: 'Engagement & Reception', img: IMG.bride10, price: 'from ₹15,000', text: 'Glam, soft-glam or dewy — a look that shines under evening lights and on the dance floor.' },
+  { slug: 'party', page: '/party-makeup-mhow', title: 'Party & Family Makeup', img: IMG.bride6, price: 'from ₹5,000', text: 'For mothers, sisters, bridesmaids and guests. Group bookings get a dedicated artist team.' },
+  { slug: 'skin', page: '/beauty-parlour-mhow', title: 'Facials & Skin Care', img: IMG.face, price: 'from ₹1,500', text: 'Pre-bridal facials, clean-ups and glow treatments so your skin is camera-ready before the big day.' },
+  { slug: 'hair', page: '/beauty-parlour-mhow', title: 'Hair Care & Styling', img: IMG.sareePink, price: 'from ₹1,000', text: 'Hair spa, treatments, bridal buns, braids, waves and saree / lehenga draping.' },
+  { slug: 'nails', page: '/beauty-parlour-mhow', title: 'Nail Art & Extensions', img: IMG.lipstick, price: 'from ₹800', text: 'Gel polish, nail extensions and bridal nail art to match your outfit.' },
 ]
 
 export const priceList = [

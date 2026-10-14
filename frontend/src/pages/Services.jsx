@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
 import { IMG, services, packages, priceList, faqs } from '../data/site'
 import { PageHero, Reveal, SectionHead, Button, Icon } from '../components/ui'
 import { SectionNav } from '../components/ScrollNav'
@@ -31,6 +32,7 @@ export default function Services() {
                 <div className="svc-row__foot">
                   <span className="svc-row__price">{s.price}</span>
                   <Button to="/contact" variant="ghost">Enquire</Button>
+                  {s.page && <Link to={s.page} className="link-arrow">Details <Icon name="arrow" /></Link>}
                 </div>
               </div>
             </Reveal>
