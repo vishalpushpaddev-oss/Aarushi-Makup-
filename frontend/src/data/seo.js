@@ -81,8 +81,8 @@ const business = () => ({
   openingHoursSpecification: {
     '@type': 'OpeningHoursSpecification',
     dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'],
-    opens: '08:00',
-    closes: '21:00',
+    opens: '10:00',
+    closes: '19:00',
   },
   makesOffer: ['Bridal Makeup', 'Engagement & Reception Makeup', 'Party Makeup', 'HD Makeup', 'Facials & Skin Treatments', 'Waxing', 'Body Massage', 'Hair Spa & Hair Treatments', 'Hair Styling', 'Nail Art & Extensions', 'Home Service Makeup', 'Makeup Courses'].map(
     (name) => ({ '@type': 'Offer', itemOffered: { '@type': 'Service', name } }),

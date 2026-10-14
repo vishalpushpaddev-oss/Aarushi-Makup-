@@ -51,7 +51,7 @@ export const brand = {
   whatsapp: '918460461764',
   email: '', // asli email milne par yahan daalein — khaali rahe to website par email nahi dikhega
   address: '2nd Floor, HDFC Bank Building, Shanti Nagar Road, Opp. Petrol Pump, Shanti Nagar, Mhow, Indore, Madhya Pradesh 453441',
-  hours: 'Mon – Sun · 8:00 AM – 9:00 PM (by appointment)',
+  hours: 'Mon – Sun · 10:00 AM – 7:00 PM',
   instagram: 'https://www.instagram.com/aarushi_makeup_studio/',
   facebook: 'https://facebook.com/',
   youtube: 'https://youtube.com/',
@@ -59,7 +59,7 @@ export const brand = {
 
 // Asli ratings — Google Maps aur Justdial listing se (count badhne par yahan update karein)
 export const ratings = [
-  { source: 'Justdial', score: '5.0', count: 15, unit: 'ratings', url: 'https://www.justdial.com/Indore/Aarushi-Makeup-Studio-Academy-Lodheshver-Mahadev-Mandir-Mhow/0731PX731-X731-241126174453-J3S7_BZDET' },
+  { source: 'Justdial', score: '5.0', count: 20, unit: 'ratings', url: 'https://www.justdial.com/Indore/Aarushi-Makeup-Studio-Academy-Lodheshver-Mahadev-Mandir-Mhow/0731PX731-X731-241126174453-J3S7_BZDET' },
   { source: 'Google', score: '5.0', count: 1, unit: 'review', url: 'https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent('Aarushi makeup studio and academy, Shanti Nagar, Mhow') },
 ]
 
@@ -207,12 +207,57 @@ export const portfolio = [
   { src: IMG.studioFront, cat: 'Our studio', title: 'Find us above HDFC Bank', real: true },
 ]
 
+// Asli customer reviews — Justdial se, jaise likhe gaye waise hi (owner ka apna review shamil nahi).
 export const testimonials = [
-  { name: 'Riya Sharma', role: 'Bride · Dec 2025', text: 'I wanted to look like me, just the best version. Aarushi got it in the trial and nailed it on the day. My makeup didn\'t budge for fourteen hours.' },
-  { name: 'Neha Agrawal', role: 'Bride · Feb 2026', text: 'Punctual to the minute and so calm. My mother and sisters were done by her team too, and every photo looks seamless.' },
-  { name: 'Pooja Jain', role: 'Academy student', text: 'The pro course changed my career. Real brides, real practice, and she shared everything about pricing and clients.' },
-  { name: 'Sakshi Verma', role: 'Reception look', text: 'Soft glam that felt light and still looked incredible under the stage lights. Already booked her for my sister.' },
-  { name: 'Ananya Mehta', role: 'Destination wedding, Udaipur', text: 'Four functions, four completely different looks, zero stress. The team travelled with us and managed everything.' },
+  {
+    name: 'Shristi Pandey',
+    date: 'Dec 2025',
+    source: 'Justdial',
+    tags: ['Polite staff', 'Luxurious vibe', 'High-quality products'],
+    text: 'If you want to make your day special, book your appointment with Aarushi Makeup Studio. My experience with Aarushi Makeup Studio was excellent. 💖🥰😊',
+  },
+  {
+    name: 'Sarveshna',
+    date: 'Jan 2025',
+    source: 'Justdial',
+    tags: ['Excellent results', 'Nice interiors', 'Hygienic salon'],
+    text: 'I recently visited Aarushi Makeup Studio and I must say, I was thoroughly impressed. The salon is impeccably clean and hygienic, with beautiful interiors that create a soothing atmosphere. The staff were extremely polite and professional. Most importantly, the results were excellent! I left feeling pampered and looking fabulous. Highly recommend this place for all your beauty needs!',
+  },
+  {
+    name: 'Ishu',
+    date: 'Apr 2025',
+    source: 'Justdial',
+    tags: ['Highly professional', 'Excellent results', 'Relaxing ambience'],
+    text: 'I had a wonderful experience at Aarushi Makeup Studio & Academy. The salon has a luxurious vibe that made me feel special. The prices are reasonable, which is great for everyone. … I was impressed with the high-quality products they use, and I loved the excellent results I got after my treatment. …',
+  },
+  {
+    name: 'Chirag Pawar',
+    date: 'Jan 2025',
+    source: 'Justdial',
+    tags: ['Experienced staff', 'High-quality products', 'Luxurious vibe'],
+    text: 'Very nice great service excellent products very luxurious products no compromise with the products and very nice makeup good looking soft and shuttle makeup',
+  },
+  {
+    name: 'Payal Raiwal',
+    date: 'Jan 2025',
+    source: 'Justdial',
+    tags: ['Makeup'],
+    text: 'Thank you so much 😊 di for the pretty makeup 😊 I like your makeup and your nature also like it.',
+  },
+  {
+    name: 'Rubal Jain',
+    date: 'Jan 2025',
+    source: 'Justdial',
+    tags: ['Reasonably priced', 'Great offers', 'Hygienic salon'],
+    text: 'I recently visited Aarushi Makeup Studio & Academy and had a fantastic experience. The services were reasonably priced, and they had great offers available. The salon was very hygienic, and the equipment used was clean. I would highly recommend this place for anyone looking for quality beauty services.',
+  },
+  {
+    name: 'Preeti Dwivedi',
+    date: 'Jan 2025',
+    source: 'Justdial',
+    tags: ['Relaxing ambience'],
+    text: 'Aarushi Makeup Studio & Academy offers a luxurious and relaxing ambiance. The skilled professionals create a serene and calming environment, making the experience truly exceptional. The attention to detail and personalized service ensures a rejuvenating and indulgent experience.',
+  },
 ]
 
 export const posts = [
