@@ -1316,3 +1316,18 @@ body { background: linear-gradient(180deg, #fcf4f2 0%, #f9ece9 40%, #fbf1ee 100%
 /* Video-wale hero thode chhote -> landscape video kam kate */
 .page-hero:has(video) { min-height: 58svh; }
 @media (max-width: 680px) { .page-hero:has(video) { min-height: 50svh; } }
+
+/* ---------- Academy 5-in-1 offer banner ---------- */
+.academy-offer-wrap { padding-bottom: 0; }
+.academy-offer { position: relative; overflow: hidden; display: grid; grid-template-columns: auto 1fr auto; gap: 24px 44px; align-items: center; padding: clamp(28px, 4vw, 44px); border-radius: var(--r-lg); background: var(--plum-bg); color: var(--cream); box-shadow: var(--shadow); }
+.academy-offer__tag { position: absolute; top: 0; left: 0; padding: 7px 16px; border-radius: 0 0 14px 0; background: var(--rose-gold); color: var(--ink); font-size: 0.7rem; font-weight: 800; letter-spacing: 0.12em; text-transform: uppercase; }
+.academy-offer__price { padding-top: 14px; }
+.academy-offer__price strong { display: block; font-family: var(--serif); font-size: clamp(2.6rem, 5vw, 3.6rem); font-weight: 600; line-height: 1; color: var(--gold-2); }
+.academy-offer__price span { font-size: 0.95rem; color: rgba(252, 246, 244, 0.95); }
+.academy-offer__list { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 8px 20px; }
+.academy-offer__list li { display: flex; gap: 9px; align-items: center; font-weight: 600; font-size: 0.92rem; }
+.academy-offer__list svg { color: var(--gold-2); flex: none; }
+@media (max-width: 900px) {
+  .academy-offer { grid-template-columns: 1fr; gap: 20px; text-align: left; }
+  .academy-offer__list { grid-template-columns: 1fr; }
+}

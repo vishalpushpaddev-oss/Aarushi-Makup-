@@ -76,7 +76,7 @@ function Hero() {
             <span className="line"><span><em>quietly</em> unforgettable.</span></span>
           </p>
           <p className="hero__text">
-            Skin-first HD & airbrush makeup for brides who want to look like themselves — only more radiant, in every photo and every hour of the day.
+            Skin-first bridal makeup, hair, skin and nails — plus a beauty academy — so you look like yourself, only more radiant, from ₹5,000.
           </p>
           <div className="hero__actions">
             <Button to="/contact#enquiry" variant="gold">Enquire Now</Button>
@@ -152,7 +152,7 @@ function Intro() {
               into her wedding feeling completely herself.
             </p>
             <p>
-              My studio blends modern technique with the richness of Indian bridal tradition — from the weightless finish of airbrush
+              My studio blends modern technique with the richness of Indian bridal tradition — from a flawless HD base and a dewy glossy finish
               to the precision of a perfect winged liner under a heavy dupatta.
             </p>
           </Reveal>

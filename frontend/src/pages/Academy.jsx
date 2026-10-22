@@ -12,7 +12,27 @@ const perks = [
 export default function Academy() {
   return (
     <>
-      <PageHero eyebrow="Makeup academy in Mhow, Indore" title="Turn your passion into a <em>profession</em>" text="Professional courses and personal workshops taught by a working bridal makeup artist." img={IMG.studio2} />
+      <PageHero eyebrow="Makeup academy in Mhow, Indore" title="Turn your passion into a <em>profession</em>" text="Five professional beauty courses in one package — makeup, hair, skin, nails and mehndi." img={IMG.studio2} />
+
+      <section className="section academy-offer-wrap">
+        <div className="container">
+          <div className="academy-offer">
+            <div className="academy-offer__tag">Special Academy Offer</div>
+            <div className="academy-offer__price">
+              <strong>₹25,000</strong>
+              <span>5 professional courses in one package</span>
+            </div>
+            <ul className="academy-offer__list">
+              <li><Icon name="check" size={15} />Bridal Makeup (Basic to Advanced)</li>
+              <li><Icon name="check" size={15} />Hair Artist Course</li>
+              <li><Icon name="check" size={15} />Skin & Facial Course</li>
+              <li><Icon name="check" size={15} />Nail Artist Course</li>
+              <li><Icon name="check" size={15} />Mehndi Course</li>
+            </ul>
+            <Button to="/contact" variant="gold" enquiry="Academy course">Enrol now</Button>
+          </div>
+        </div>
+      </section>
 
       <section className="section">
         <div className="container">
@@ -30,7 +50,7 @@ export default function Academy() {
 
       <section className="section section--tint">
         <div className="container">
-          <SectionHead eyebrow="Courses" title="Find your <em>course</em>" text="New batches start every month. Weekend options are available for working professionals." />
+          <SectionHead eyebrow="Courses" title="What you'll <em>learn</em>" text="All five courses are included in the ₹25,000 package. Learn, practise, create and grow." />
           <div className="courses">
             {courses.map((c, i) => (
               <Reveal key={c.slug} delay={(i % 2) * 100} className="course">

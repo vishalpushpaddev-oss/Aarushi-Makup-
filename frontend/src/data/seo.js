@@ -13,7 +13,7 @@ export const pages = {
   '/': {
     title: `Bridal Makeup Artist in Mhow, Indore | ${NAME}`,
     description:
-      'Aarushi Makeup Studio & Academy, Mhow — HD & airbrush bridal makeup, engagement, party makeup, facials, hair, nails, home service and professional makeup courses near Indore.',
+      'Aarushi Makeup Studio & Academy, Mhow — bridal makeup from ₹5,000, party makeup, hairstyling, facials, hair treatments, nails, lashes, home service and a 5-in-1 beauty course.',
   },
   '/about': {
     title: `About Aarushi Piplodiya — Makeup Artist in Mhow since 2019 | ${NAME}`,
@@ -23,12 +23,12 @@ export const pages = {
   '/portfolio': {
     title: `Bridal Makeup Portfolio — Real Brides | ${NAME}`,
     description:
-      'See real bridal, engagement, reception and party makeup looks by Aarushi Makeup Studio, Mhow. HD and airbrush makeup photographed in natural light.',
+      'See real bridal, engagement, reception and party makeup looks by Aarushi Makeup Studio, Mhow. HD and glossy makeup photographed in natural light.',
   },
   '/services': {
     title: `Bridal Makeup Price in Mhow — Services & Packages | ${NAME}`,
     description:
-      'Bridal makeup packages from ₹25,000, engagement, party & family makeup, facials, hair styling, nail art and home service in Mhow & Indore. See full rate card and FAQs.',
+      'Bridal makeup from ₹5,000 (HD ₹7,500, glossy ₹8,000), hairstyling from ₹350, facials, hair treatments, nails, lashes and home service in Mhow & Indore. See the full rate card and FAQs.',
   },
   '/reviews': {
     title: `Reviews — Rated 5.0★ by Clients in Mhow | ${NAME}`,
@@ -43,7 +43,7 @@ export const pages = {
   '/journal': {
     title: `Bridal Beauty Tips & Makeup Blog | ${NAME}`,
     description:
-      'Bridal skin prep plans, HD vs airbrush makeup, trial checklists and makeup tips for brides-to-be from Aarushi Makeup Studio, Mhow.',
+      'Bridal skin prep, HD vs glossy makeup, trial checklists and beauty tips for brides-to-be from Aarushi Makeup Studio, Mhow.',
   },
   '/contact': {
     title: `Contact & Book — Makeup Artist in Mhow | ${NAME}`,
