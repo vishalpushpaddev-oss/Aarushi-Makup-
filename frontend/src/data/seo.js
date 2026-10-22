@@ -4,7 +4,7 @@ import { brand, courses, faqs } from './site'
 import { landingPages, landingBySlug } from './landing'
 
 // ⚠️ Hosting ke baad apna asli domain yahan daalein (end me "/" nahi).
-export const SITE_URL = 'https://aarushimakeupstudio.vercel.app'
+export const SITE_URL = 'https://aarushimakeupstudio.in'
 
 const NAME = `${brand.name} ${brand.suffix}`
 const OG_IMAGE = '/og-image.jpg'
