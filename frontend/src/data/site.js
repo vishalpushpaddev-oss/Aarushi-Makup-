@@ -97,7 +97,7 @@ export const packages = [
     id: 'basic',
     name: 'Basic Bridal',
     price: '₹5,000',
-    img: IMG.bride5,
+    img: IMG.realEngagement,
     blurb: 'A beautiful, budget-friendly bridal look designed around your outfit and style.',
     includes: ['Bridal makeup for your day', 'Hairstyling', 'Dupatta / saree setting', 'Lashes'],
   },
@@ -105,7 +105,7 @@ export const packages = [
     id: 'glossy',
     name: 'Glossy Bridal',
     price: '₹8,000',
-    img: IMG.hero,
+    img: IMG.realBride2,
     featured: true,
     blurb: 'Our most-loved glossy, dewy HD finish — radiant in person and in every photo.',
     includes: ['Glossy HD bridal makeup', 'Premium hairstyling with accessories', 'Draping & jewellery setting', 'Lashes', 'Touch-up for the day'],
@@ -114,19 +114,19 @@ export const packages = [
     id: 'hd',
     name: 'HD Bridal',
     price: '₹7,500',
-    img: IMG.bride3,
+    img: IMG.realBride1,
     blurb: 'A flawless, camera-ready HD finish that holds up to close-up photography and video.',
     includes: ['HD bridal makeup', 'Hairstyling with accessories', 'Draping & setting', 'Lashes', 'Long-lasting finish'],
   },
 ]
 
 export const services = [
-  { slug: 'bridal', page: '/bridal-makeup-artist-mhow', title: 'Bridal Makeup', img: IMG.bride1, price: 'from ₹5,000', text: 'Basic, HD and glossy bridal looks for your wedding day, designed around your outfit, jewellery and skin.' },
+  { slug: 'bridal', page: '/bridal-makeup-artist-mhow', title: 'Bridal Makeup', img: IMG.realBride1, price: 'from ₹5,000', text: 'Basic, HD and glossy bridal looks for your wedding day, designed around your outfit, jewellery and skin.' },
   { slug: 'party', page: '/party-makeup-mhow', title: 'Party & Occasion Makeup', img: IMG.realEngagement, price: 'Enquire', text: 'Engagement, reception, party and family makeup that shines under evening lights.' },
   { slug: 'hair', page: '/beauty-parlour-mhow', title: 'Hairstyling', img: IMG.realHair, price: 'from ₹350', text: 'Bridal, party and occasion hairstyles — buns, braids, curls, waves and more.' },
   { slug: 'treatments', page: '/beauty-parlour-mhow', title: 'Hair Treatments', img: IMG.realSmoothing, price: 'Enquire', text: 'Keratin, botox, nanoplastia, smoothening and straightening, plus colour, cutting and extensions.' },
-  { slug: 'skin', page: '/beauty-parlour-mhow', title: 'Facials & Skin Care', img: IMG.face, price: 'Enquire', text: 'Facials, professional skin treatments, mani-pedi, body massage, polishing, threading and waxing.' },
-  { slug: 'nails', page: '/beauty-parlour-mhow', title: 'Nails, Lash & Extensions', img: IMG.lipstick, price: 'Enquire', text: 'Nail extensions, creative nail art, eyelash extensions and hair extensions.' },
+  { slug: 'skin', page: '/beauty-parlour-mhow', title: 'Facials & Skin Care', img: IMG.studioInside, price: 'Enquire', text: 'Facials, professional skin treatments, mani-pedi, body massage, polishing, threading and waxing.' },
+  { slug: 'nails', page: '/beauty-parlour-mhow', title: 'Nails, Lash & Extensions', img: IMG.studioDecor, price: 'Enquire', text: 'Nail extensions, creative nail art, eyelash extensions and hair extensions.' },
 ]
 
 export const priceList = [
@@ -175,7 +175,7 @@ export const courses = [
     mode: 'In studio',
     fee: 'In ₹25,000 package',
     level: 'All levels',
-    img: IMG.lipstick,
+    img: IMG.studioDecor,
     points: ['Manicure & pedicure', 'Gel polish application', 'Nail extensions', 'Creative nail art'],
   },
   {
@@ -202,7 +202,6 @@ export const portfolio = [
   { src: IMG.bride1, cat: 'Bridal', title: 'Rani pink, soft eyes' },
   { src: IMG.bride4, cat: 'Haldi & Mehendi', title: 'South Indian silk' },
   { src: IMG.bride11, cat: 'Bridal', title: 'Mehendi & mathapatti' },
-  { src: IMG.face, cat: 'Party', title: 'Soft-glam evening' },
   { src: IMG.bride3, cat: 'Bridal', title: 'Palace courtyard bride' },
   { src: IMG.bride6, cat: 'Party', title: 'Polki & glow' },
   { src: IMG.sareeRed, cat: 'Editorial', title: 'Banarasi studio shoot' },

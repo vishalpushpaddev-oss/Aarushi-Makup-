@@ -46,7 +46,7 @@ export const landingPages = [
     hero: 'Camera-ready skin, <em>all day long</em>',
     heroText: 'A flawless HD base and a dewy glossy finish that look stunning under flash, ring lights and 4K video.',
     img: IMG.bride5,
-    gallery: [IMG.hero, IMG.bride6, IMG.face, IMG.bride2],
+    gallery: [IMG.realBride2, IMG.realBride1, IMG.realEngagement, IMG.realHair],
     price: 'from ₹7,500',
     intro: [
       'HD and glossy are our two most-requested bridal finishes. Both are designed to look seamless on high-definition cameras, but they give a different feel on the day.',

@@ -381,7 +381,7 @@ function Areas() {
 }
 
 function Insta() {
-  const pics = [IMG.bride1, IMG.lipstick, IMG.bride4, IMG.brushes, IMG.bride10, IMG.flatlay]
+  const pics = [IMG.realBride2, IMG.realBride1, IMG.realEngagement, IMG.realHair, IMG.realSmoothing, IMG.studioDecor]
   return (
     <section className="insta">
       <div className="insta__grid">
