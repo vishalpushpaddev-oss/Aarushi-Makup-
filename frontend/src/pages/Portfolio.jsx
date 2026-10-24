@@ -28,7 +28,7 @@ export default function Portfolio() {
 
   return (
     <>
-      <PageHero eyebrow="Bridal makeup portfolio · Mhow" title="A gallery of <em>real</em> brides" text="Looks from our studio in Mhow. Photos marked “Real client” are our own work — more coming soon." img={IMG.bride3} />
+      <PageHero eyebrow="Bridal makeup portfolio · Mhow" title="A gallery of <em>real</em> brides" text="Real brides and real looks from our studio in Mhow — every photo here is our own work." img={IMG.bride3} />
 
       <section className="section">
         <div className="container">

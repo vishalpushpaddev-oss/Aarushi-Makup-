@@ -12,8 +12,8 @@ export const landingPages = [
     h1: 'Bridal Makeup Artist in Mhow, Indore',
     hero: 'Your wedding look, <em>made for you</em>',
     heroText: 'Basic, HD and glossy bridal makeup with hairstyling and draping — at our Mhow studio or at your home and venue.',
-    img: IMG.realBride1,
-    gallery: [IMG.realBride2, IMG.realBride1, IMG.realEngagement, IMG.bride11],
+    img: IMG.rBrideSaree,
+    gallery: [IMG.rBrideGold, IMG.rBrideSaree, IMG.rBrideGlossy, IMG.rBridePalace1],
     price: 'from ₹5,000',
     intro: [
       'Looking for a bridal makeup artist in Mhow who understands Indian bridal looks? At Aarushi Makeup Studio & Academy we create dulhan makeup that looks natural in person and flawless in photos and 4K video — whether you love a soft, dewy look or a full traditional glam.',
@@ -45,8 +45,8 @@ export const landingPages = [
     h1: 'HD & Glossy Makeup in Mhow',
     hero: 'Camera-ready skin, <em>all day long</em>',
     heroText: 'A flawless HD base and a dewy glossy finish that look stunning under flash, ring lights and 4K video.',
-    img: IMG.bride5,
-    gallery: [IMG.realBride2, IMG.realBride1, IMG.realEngagement, IMG.realHair],
+    img: IMG.rBrideGlossy,
+    gallery: [IMG.rBrideGold, IMG.rBrideGlossy, IMG.rBrideEditorial, IMG.rBrideSaree],
     price: 'from ₹7,500',
     intro: [
       'HD and glossy are our two most-requested bridal finishes. Both are designed to look seamless on high-definition cameras, but they give a different feel on the day.',
@@ -77,8 +77,8 @@ export const landingPages = [
     h1: 'Party, Engagement & Reception Makeup in Mhow',
     hero: 'Every function, <em>its own glow</em>',
     heroText: 'Soft glam, dewy or full glam looks for engagements, receptions, sangeet, haldi, mehendi and family functions.',
-    img: IMG.bride10,
-    gallery: [IMG.realEngagement, IMG.realBride2, IMG.bride2, IMG.bride6],
+    img: IMG.rGownStudio,
+    gallery: [IMG.rGownStudio, IMG.rGownArch, IMG.realEngagement, IMG.rBridePalace2],
     price: 'Enquire',
     intro: [
       'Need party makeup in Mhow for an engagement, reception, sangeet or a family wedding? Our team creates looks that shine under evening lights and photograph beautifully — from soft, natural glam to bold eyes and statement lips.',
@@ -109,8 +109,8 @@ export const landingPages = [
     h1: 'Makeup & Beauty Course in Mhow — 5-in-1 Academy',
     hero: 'Turn your passion into a <em>profession</em>',
     heroText: 'Five professional beauty courses in one package — learn makeup, hair, skin, nails and mehndi at our Mhow academy.',
-    img: IMG.studioInside,
-    gallery: [IMG.studioInside, IMG.studioEntry, IMG.studioDecor, IMG.studioHair],
+    img: IMG.rGraduation,
+    gallery: [IMG.rGraduation, IMG.studioInside, IMG.studioEntry, IMG.studioDecor],
     price: '₹25,000 (5-in-1)',
     intro: [
       'Want to build a career in beauty? Aarushi Makeup Studio & Academy in Mhow offers a special 5-in-1 course package — five professional courses in one, for ₹25,000.',

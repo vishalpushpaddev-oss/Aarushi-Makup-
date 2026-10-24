@@ -9,11 +9,11 @@ import { Divider, Particles } from '../components/premium'
 import { areasServed } from '../data/seo'
 
 const slides = [
-  { src: IMG.realBride2, pos: '50% 22%', label: 'Kundan bridal glam' },
-  { src: IMG.realBride1, pos: '50% 30%', label: 'Red lehenga bride' },
-  { src: IMG.hero, pos: '62% 20%', label: 'Kundan bridal' },
-  { src: IMG.bride5, pos: '50% 30%', label: 'HD close-up' },
-  { src: IMG.bride1, pos: '50% 25%', label: 'Rani pink bride' },
+  { src: IMG.rBrideGold, pos: '50% 22%', label: 'Kundan gold bride' },
+  { src: IMG.rBrideGlossy, pos: '50% 20%', label: 'Glossy bridal glow' },
+  { src: IMG.rBrideSaree, pos: '50% 18%', label: 'Red saree bride' },
+  { src: IMG.rBrideEditorial, pos: '50% 22%', label: 'Editorial bridal' },
+  { src: IMG.rBridePalace1, pos: '50% 18%', label: 'Palace bride' },
 ]
 
 function Hero() {
@@ -136,7 +136,7 @@ function Intro() {
               <img src={IMG.aarushi} alt="Aarushi Piplodiya, luxury makeup artist in Mhow" style={{ objectPosition: 'center 18%' }} />
             </Parallax>
           </div>
-          <img className="intro__img-b" src={IMG.realBride2} alt="Bridal makeup by Aarushi Piplodiya" />
+          <img className="intro__img-b" src={IMG.rArtist} alt="Aarushi doing bridal makeup" />
           <span className="intro__sign">Aarushi</span>
         </Reveal>
         <div className="intro__copy">

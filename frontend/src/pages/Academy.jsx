@@ -12,7 +12,7 @@ const perks = [
 export default function Academy() {
   return (
     <>
-      <PageHero eyebrow="Makeup academy in Mhow, Indore" title="Turn your passion into a <em>profession</em>" text="Five professional beauty courses in one package — makeup, hair, skin, nails and mehndi." img={IMG.studio2} />
+      <PageHero eyebrow="Makeup academy in Mhow, Indore" title="Turn your passion into a <em>profession</em>" text="Five professional beauty courses in one package — makeup, hair, skin, nails and mehndi." img={IMG.rGraduation} />
 
       <section className="section academy-offer-wrap">
         <div className="container">
